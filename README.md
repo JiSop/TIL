@@ -11,3 +11,4 @@
 - [배열(array)](./JavaScript/javascript-array.md)
 - [스택과 큐(stack and queue)](./JavaScript/javascript-stack-and-queue.md)
 - [검색과 정렬(search and sort)](./JavaScript/javascript-search-and-sort.md)
+- [해시 테이블(hash table)](./JavaScript/javascript-hash-table.md)
