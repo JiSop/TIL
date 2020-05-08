@@ -19,7 +19,7 @@
 
 
 
-###Action creator(액션 생성 함수)
+### Action creator(액션 생성 함수)
 
 이름 그대로 액션 객체를 만들어 주는 함수
 
