@@ -98,3 +98,38 @@ this 바인딩은 추상 연산 [ResolveThisBinding](https://tc39.github.io/ecma
   2.3. this 바인딩
 
 전역 실행 컨텍스트를 생성하고 실행 컨텍스트 스택에 생성된 실행 컨텍스트를 푸시하면 해당 실행 컨텍스트는 실행 중인 실행 컨텍스트가 된다.
+
+
+
+---
+
+
+
+## 퀴즈
+
+Q1. 실행 컨텍스트는 `(a)` 자료 구조로 관리 된다. `(b)` 혹은 `(c)`   이라 한다.
+
+- A.  
+  (a) 스택(Stack)  
+  (b) 실행 컨텍스트 스택(Execution context stack)  
+  (c) 콜 스택(Call stack)
+
+Q2. 실행 컨텍스트 관점에서 스코프 체인의 동작을 설명
+
+- A.
+
+  running execution context의 Lexical Enviroment에서 식별자를 검색할 수 없으면 OuterLexicalEnvironment가 가리키는 상위 Lexical Enviroment으로 이동하여 식별자를 검색한다.
+
+Q3. 각각 어떠한 요소를 찾을때 프로토타입 체인과 스코프 체인의 차이
+
+- A.  
+  프로토타입 체인은 객체가 가지고있는 프로퍼티를 찾을때 사용되고, 스코프 체인은 식별자를 찾을때 사용된다.
+
+Q4. 전역 실행 컨텍스트를 생성하고 실행 컨텍스트 스택에 생성된 실행 컨텍스트를 푸시하면 해당 실행 컨텍스트는 실행 중인 실행 컨텍스트가 된다. ( O / X )
+
+- A.  
+  O, 실행 컨텍스트 스택에 푸시된 실행 컨텍스트는 최상위에 올라가면서 running execution context가 된다.
+
+Q5. 실행 컨텍스트 관점에서 var 키워드로 선언된 변수와 let, const로 선언된 변수의 차이
+
+- A.
