@@ -23,6 +23,16 @@
 
 
 
+### 객체 생성 방법
+
+- 객체 리터럴
+- Object 생성자 함수
+- 생성자 함수
+- Object.create 메소드
+- 클래스 (ES6)
+
+
+
 ## 객체는 프로퍼티의 집합
 
 객체는 0개 이상의 프로퍼티의 집합이며 프로퍼키는 key와 value로 구성된다.
@@ -278,3 +288,23 @@ console.log(obj); // {prop-1: 1, prop-2: 2, prop-3: 3}
 
 ```
 
+---
+
+
+
+## 퀴즈
+
+Q1. 자바스크립트는 클래스 없이 객체를 생성할 수 없다. ( O / X )
+
+- A.  
+  X, 자바스크립트는 클래스 없이 객체 생성이 가능하다.
+
+Q2. 브라우저 환경과 node.js의 각각 전역 객체는 무엇인가
+
+- A.  
+  window, global
+
+Q3. window 전역 객체가 가지고 있는 전역 객체 프로퍼티 3가지 이상
+
+- A.  
+  Object, String, Number, Boolean, Function, Array, RegExp, Date, Math, Promise
