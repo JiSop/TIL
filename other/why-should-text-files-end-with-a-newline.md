@@ -92,8 +92,3 @@ IEEE 라는 단체에서 UNIX의 표준을 정하는 명세 [POSIX][POSIX - 위�
 [Unix/Linux | vi, vim ^M 제거]: https://jink1982.tistory.com/123
 
 
-
-
-
-
-
