@@ -82,9 +82,7 @@ baz();
 
 ![Visualized Event Loop](./img/eventLoop.gif)
 
-*출처:* *[✨♻️ JavaScript Visualized: Event Loop][JavaScript Visualized: Event Loop]*
-
-
+*출처:*  *[✨♻️ JavaScript Visualized: Event Loop][JavaScript Visualized: Event Loop]*
 
 위 와는 다르지만 <http://latentflip.com/loupe>에 들어가 코드를 작성하면 event loop가 동작하는 모습을 시각화 해준다. 
 
@@ -109,19 +107,27 @@ baz();
 
 
 
-한 줄로 요약하면 **'싱글 스레드 기반 이지만 비동기 처리가 가능하다'**
+### 한 줄 요약
+
+'싱글 스레드 기반 이지만 비동기 처리가 가능하다'
 
 
 
 ## reference
 
-[What the heck is the event loop anyway?](https://youtu.be/8aGhZQkoFbQ) (이 영상부터 보면 이해하기가 더 쉽다)
+[What the heck is the event loop anyway?][What the heck is the event loop anyway?] (이 영상부터 보면 이해하기가 더 쉽다)
 
-[Event | PoiemaWeb](https://poiemaweb.com/js-event)
+[Event | PoiemaWeb][Event | PoiemaWeb]
 
-[자바스크립트와 이벤트 루프](https://meetup.toast.com/posts/89)
+[자바스크립트와 이벤트 루프][자바스크립트와 이벤트 루프]
 
-[JavaScript Visualized: Event Loop](https://dev.to/lydiahallie/javascript-visualized-event-loop-3dif)
+[✨♻️ JavaScript Visualized: Event Loop][JavaScript Visualized: Event Loop]
 
-[JS 비동기는 어떻게 구현되어있는가??](https://velog.io/@thsoon/JS-비동기는-어떻게-구현되어있는가)
+[JS 비동기는 어떻게 구현되어있는가??][JS 비동기는 어떻게 구현되어있는가??]
+
+[What the heck is the event loop anyway?]: https://youtu.be/8aGhZQkoFbQ
+[Event | PoiemaWeb]: https://poiemaweb.com/js-event
+[자바스크립트와 이벤트 루프]: https://meetup.toast.com/posts/89
+[JavaScript Visualized: Event Loop]: https://dev.to/lydiahallie/javascript-visualized-event-loop-3dif
+[JS 비동기는 어떻게 구현되어있는가??]: https://velog.io/@thsoon/JS-비동기는-어떻게-구현되어있는가
 
