@@ -69,14 +69,3 @@ Data type은 데이터를 메모리에 저장할 때 확보해야 하는 메모�
 원시 데이터 타입을 제외한 모든 값은 객체이며, mutable value(변경 가능한 값)이고 pass-by-reference이다.
 
 
-
----
-
-
-
-## 퀴즈
-
-Q. deep copy와 pass by value의 연관성
-
-- A.  
-  원시 값은 신뢰성을 보장하기 위해 값을 복사해서 전달한다. 이러한 과정을 pass by value라 하는데 이때 값을 복사하는 것을 deep copy라고 한다.
