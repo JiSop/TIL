@@ -232,3 +232,25 @@ const mouse = {
 - **답**: A
 - **필요한 지식**: 객체의 키, 객체 점 표기법 접근, 객체 대괄호 표기법 접근
 
+
+
+### Q6.
+
+```javascript
+let c = { greeting: "Hey!" };
+let d;
+
+d = c;
+c.greeting = "Hello";
+console.log(d.greeting);
+
+```
+
+- **선택지**
+  - A: `Hello`
+  - B: `Hey!`
+  - C: `undefined`
+  - D: `ReferenceError`
+  - E: `TypeError`
+- **답**: A
+- **필요한 지식**: pass-by-reference, mutable value
