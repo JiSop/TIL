@@ -254,3 +254,33 @@ console.log(d.greeting);
   - E: `TypeError`
 - **답**: A
 - **필요한 지식**: pass-by-reference, mutable value
+
+
+
+### Q7.
+
+```javascript
+let a = 3;
+let b = new Number(3);
+let c = 3;
+
+console.log(a == b);
+console.log(a === b);
+console.log(b === c);
+
+```
+
+- **선택지**
+  - A: `true` `false` `true`
+  - B: `false` `false` `true`
+  - C: `true` `false` `false`
+  - D: `false` `true` `true`
+- **답**: C
+- **필요한 지식**: Number 생성자 함수, 동등 연산자(`==`), 일치 연산자(`===`)
+
+L2, `new Number(3)`는 `3`을 할당한 Number 래퍼 객체를 생성한다. 때문에 변수 `b`는 object 타입이다.
+
+L5, `console.log(a == b)`는 동등 연산자로 비교하여 타입과 관계없이 값의 동등만을 판별하기 때문에 `true`이다.
+
+L6, `console.log(a === b)`는 일치 연산자로 비교하여 값과 타입이 모두 일치해야 하기 때문에 `false`이다. (변수 `a`는 숫자 리터럴로 생성한 number 타입의 값 `3`이다)
+
