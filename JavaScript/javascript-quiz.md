@@ -284,3 +284,48 @@ L5, `console.log(a == b)`는 동등 연산자로 비교하여 타입과 관계�
 
 L6, `console.log(a === b)`는 일치 연산자로 비교하여 값과 타입이 모두 일치해야 하기 때문에 `false`이다. (변수 `a`는 숫자 리터럴로 생성한 number 타입의 값 `3`이다)
 
+
+
+### Q8.
+
+```javascript
+class Chameleon {
+  static colorChange(newColor) {
+    this.newColor = newColor;
+    return this.newColor;
+  }
+
+  constructor({ newColor = "green" } = {}) {
+    this.newColor = newColor;
+  }
+}
+
+const freddie = new Chameleon({ newColor: "purple" });
+console.log(freddie.colorChange("orange"));
+
+```
+
+- **선택지**
+  - A: `orange`
+  - B: `purple`
+  - C: `green`
+  - D: `TypeError`
+- **답**: D
+- **필요한 지식**: 클래스, 인스턴스, 정적 메소드
+
+정적 메소드인 `colorChange()`는 인스턴스 `freddie`의 프로토타입 체인에 없다.
+
+인스턴스 `freddie`의 프로토타입 체인에 `Chameleon` 클래스가 없기 때문에 `colorChange()`를 호출하지 못하고 `TypeError`가 발생하는 것이다.
+
+클래스로 생성한 인스턴스의 프로토타입 체인에 해당 클래스는 존재하지 않고, 해당 클래스가 소유하고 있는 정적 메소드 또한 존재할 수 없기 때문에 인스턴스에서 호출할 수 없다. 
+
+한 마디로 인스턴스는 클래스의 정적 메소드를 상속받을 수 없다. 
+
+> **정적 메소드**
+>
+> 클래스에서 `static` 키워드를 사용하면 정적 메소드를 정의할 수 있고, 해당 클래스의 메소드가 된다.
+
+>  **클래스는 프로퍼티/메소드를 가질 수 있다.**
+>
+> Class는 '함수'로 평가되고 함수는 '일급 객체'이기 때문에 프로퍼티/메소드를 소유할 수 있다.
+
