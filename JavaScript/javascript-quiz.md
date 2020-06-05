@@ -329,3 +329,23 @@ console.log(freddie.colorChange("orange"));
 >
 > Class는 '함수'로 평가되고 함수는 '일급 객체'이기 때문에 프로퍼티/메소드를 소유할 수 있다.
 
+
+
+### Q9.
+
+```javascript
+let greeting; // Typo!
+greetign = {};
+console.log(greetign);
+
+```
+
+- **선택지**
+  - A: `{}`
+  - B: `ReferenceError: greetign is not defined`
+  - C: `undefined`
+- **답**: A
+
+변수 `greetign`은 키워드를 사용하지 않고 선언 하지 않았기에 `var` 키워드로 선언한 변수 처럼 전역 변수가 된다.
+
+strict 모드를 사용하거나 ESLint 같은 도구를 사용하면 이런 문제를 예방할 수 있다.
