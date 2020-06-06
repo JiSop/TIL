@@ -36,7 +36,7 @@ interface InterfaceName {
 ## 선택적 프로퍼티 (Optional Properties)
 
 프로퍼티 이름 끝에 `?`를 붙여 Optional Properties로 선언 할 수 있다.  
-선택적으로 사용 가능한 프로퍼티를 만들면서 인터페이스에 속하지 않는 프로퍼티의 사용을 방지 할 수 있다.
+선택적으로 사용 가능한 프로퍼티를 작성하면서 인터페이스에 속하지 않는 프로퍼티의 사용을 방지 할 수 있다.
 
 ```typescript
 interface User {

@@ -349,3 +349,25 @@ console.log(greetign);
 변수 `greetign`은 키워드를 사용하지 않고 선언 하지 않았기에 `var` 키워드로 선언한 변수 처럼 전역 변수가 된다.
 
 strict 모드를 사용하거나 ESLint 같은 도구를 사용하면 이런 문제를 예방할 수 있다.
+
+
+
+### Q10.
+
+```javascript
+function bark() {
+  console.log("Woof!");
+}
+
+bark.animal = "dog";
+
+```
+
+- **선택지**
+  - A: 별일 없어요, 이건 완전히 괜찮아요!
+  - B: `SyntaxError` 이 방법으로 함수에 속성을 추가할 수 없어요.
+  - C: `"Woof"`이 출력돼요.
+  - D: `ReferenceError`
+- **답**: A
+
+함수는 '일급 객체'이기 때문에 프로퍼티/메소드를 소유할 수 있다.
