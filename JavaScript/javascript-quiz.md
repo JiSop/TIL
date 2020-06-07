@@ -371,3 +371,29 @@ bark.animal = "dog";
 - **답**: A
 
 함수는 '일급 객체'이기 때문에 프로퍼티/메소드를 소유할 수 있다.
+
+
+
+### Q11.
+
+```javascript
+function Person(firstName, lastName) {
+  this.firstName = firstName;
+  this.lastName = lastName;
+}
+
+const member = new Person("Lydia", "Hallie");
+Person.getFullName = function() {
+  return `${this.firstName} ${this.lastName}`;
+};
+
+console.log(member.getFullName());
+
+```
+
+- **선택지**
+  - A: `TypeError`
+  - B: `SyntaxError`
+  - C: `Lydia Hallie`
+  - D: `undefined` `undefined`
+- **답**: A
