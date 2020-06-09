@@ -397,3 +397,30 @@ console.log(member.getFullName());
   - C: `Lydia Hallie`
   - D: `undefined` `undefined`
 - **답**: A
+
+
+
+### Q12.
+
+```javascript
+function Person(firstName, lastName) {
+  this.firstName = firstName;
+  this.lastName = lastName;
+}
+
+const lydia = new Person("Lydia", "Hallie");
+const sarah = Person("Sarah", "Smith");
+
+console.log(lydia);
+console.log(sarah);
+
+```
+
+- **선택지**
+  - A: `Person {firstName: "Lydia", lastName: "Hallie"}` 그리고 `undefined`
+  - B: `Person {firstName: "Lydia", lastName: "Hallie"}` 그리고 `Person {firstName: "Sarah", lastName: "Smith"}`
+  - C: `Person {firstName: "Lydia", lastName: "Hallie"}` 그리고 `{}`
+  - D:`Person {firstName: "Lydia", lastName: "Hallie"}` 그리고 `ReferenceError`
+- **답**: A
+
+L10, `new` 키워드를 사용하지 않아 생성자 함수가 아니라 일반 함수로 호출되어 `Person` 함수 내부의 `this`는 전역을 참조하기 때문에 `undefined`를 반환한다.
