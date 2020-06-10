@@ -424,3 +424,31 @@ console.log(sarah);
 - **답**: A
 
 L10, `new` 키워드를 사용하지 않아 생성자 함수가 아니라 일반 함수로 호출되어 `Person` 함수 내부의 `this`는 전역을 참조하기 때문에 `undefined`를 반환한다.
+
+
+
+### Q13. 이벤트 전달의 3단계는 무엇일까요?
+
+- **선택지**
+  - A: Target > Capturing > Bubbling
+  - B: Bubbling > Target > Capturing
+  - C: Target > Bubbling > Capturing
+  - D: Capturing > Target > Bubbling
+- **답**: D
+
+
+
+
+
+### Q14. 모든 객체는 프로토타입을 가져요.
+
+- **선택지**
+  - A: true
+  - B: false
+- **답**: B
+
+프로토타입 체인 최상위에는 있는 `Object.prototype` 객체는 프로토타입을 가지고 있지 않다.  
+
+> `Object.prototype` 내부 슬롯 `[[Prototype]] `의 값은 `null`
+
+이 최상위 객체를 제외한 모든 객체는 프로토타입을 가지고있다.
