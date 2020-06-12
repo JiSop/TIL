@@ -494,3 +494,79 @@ console.log(number);
 
 L2, 증감 연산자가 접미에 사용되었기 때문에 `0` 출력 이후 변수 `number`의 값이 `1`증가  
 L3, 증감 연산자가 접두에 사용되었기 때문에 변수 `number`의 값이 `1`증가하여 `2` 출력  
+
+
+
+### Q17.
+
+```javascript
+function getPersonInfo(one, two, three) {
+  console.log(one);
+  console.log(two);
+  console.log(three);
+}
+
+const person = "Lydia";
+const age = 21;
+
+getPersonInfo`${person} is ${age} years old`;
+
+```
+
+- **선택지**
+  - A: `"Lydia"` `21` `["", " is ", " years old"]`
+  - B: `["", " is ", " years old"]` `"Lydia"` `21`
+  - C: `"Lydia"` `["", " is ", " years old"]` `21`
+- **답**: B
+
+처음보는 문법이라 당황스럽다 😯
+
+Tagged templates이라고 한다 자세한 내용은 [Template literals - JavaScript | MDN](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Template_literals) 참고
+
+
+
+### Q18.
+
+```javascript
+function checkAge(data) {
+  if (data === { age: 18 }) {
+    console.log("You are an adult!");
+  } else if (data == { age: 18 }) {
+    console.log("You are still an adult.");
+  } else {
+    console.log(`Hmm.. You don't have an age I guess`);
+  }
+}
+
+checkAge({ age: 18 });
+
+```
+
+- **선택지**
+  - A: `You are an adult!`
+  - B: `You are still an adult.`
+  - C: `Hmm.. You don't have an age I guess`
+- **답**: C
+
+Reference Type은 값이 아니라 참조가 같아야 한다. 따라서 C
+
+
+
+### Q19.
+
+```javascript
+function getAge(...args) {
+  console.log(typeof args);
+}
+
+getAge(21);
+
+```
+
+- **선택지**
+  - A: `"number"`
+  - B: `"array"`
+  - C: `"object"`
+  - D: `"NaN"`
+- **답**: C
+
