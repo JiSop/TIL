@@ -570,3 +570,24 @@ getAge(21);
   - D: `"NaN"`
 - **답**: C
 
+
+
+### Q20.
+
+```javascript
+function getAge() {
+  "use strict";
+  age = 21;
+  console.log(age);
+}
+
+getAge();
+
+```
+
+- **선택지**
+  - A: `21`
+  - B: `undefined`
+  - C: `ReferenceError`
+  - D: `TypeError`
+- **답**: C
