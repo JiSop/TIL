@@ -591,3 +591,56 @@ getAge();
   - C: `ReferenceError`
   - D: `TypeError`
 - **답**: C
+
+
+
+### Q21. `sum`의 값은 무엇일까요?
+
+```javascript
+const sum = eval("10*10+5");
+```
+
+- **선택지**
+  - A: `105`
+  - B: `"105"`
+  - C: `TypeError`
+  - D: `"10*10+5"`
+- **답**: A
+
+
+
+### Q22. cool_secret에 몇 시간이나 접근이 가능할까요?
+
+```javascript
+sessionStorage.setItem("cool_secret", 123);
+```
+
+- **선택지**
+  - A: 영원히, 데이터는 사라지지 않아요.
+  - B: 사용자가 탭을 닫을 때.
+  - C: 사용자가 탭뿐만 아니라, 브라우저 전체를 닫을 때.
+  - D: 사용자가 자신의 컴퓨터를 종료시켰을 때.
+- **답**: B
+
+
+
+### Q23.
+
+```javascript
+var num = 8;
+var num = 10;
+
+console.log(num);
+```
+
+- **선택지**
+  - A: `8`
+  - B: `10`
+  - C: `SyntaxError`
+  - D: `ReferenceError`
+- **답**: B
+
+p.s - 문제의 순서가 난이도에 따라서 있는건 아닌가보다
+
+
+
