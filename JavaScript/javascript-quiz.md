@@ -644,3 +644,45 @@ p.s - 문제의 순서가 난이도에 따라서 있는건 아닌가보다
 
 
 
+### Q24.
+
+```javascript
+const obj = { 1: "a", 2: "b", 3: "c" };
+const set = new Set([1, 2, 3, 4, 5]);
+
+obj.hasOwnProperty("1");
+obj.hasOwnProperty(1);
+set.has("1");
+set.has(1);
+```
+
+- **선택지**
+  - A: `false` `true` `false` `true`
+  - B: `false` `true` `true` `true`
+  - C: `true` `true` `false` `true`
+  - D: `true` `true` `true` `true`
+- **답**: C
+
+L4, 객체의 프로퍼티 키는 문자열(혹은 심볼) 이다.  
+`1: "a"`의 `1`은 사실 숫자로 이루어진 문자열이고 따옴표가 생략되어 있는 것이기 때문에 `true`
+
+L6, 변수 `set`은 문자열 타입의 `"1"`을 가지고있지 않기 때문에 당연히 `false`
+
+
+
+### Q25.
+
+```javascript
+const obj = { a: "one", b: "two", a: "three" };
+console.log(obj);
+```
+
+- **선택지**
+  - A: `{ a: "one", b: "two" }`
+  - B: `{ b: "two", a: "three" }`
+  - C: `{ a: "three", b: "two" }`
+  - D: `SyntaxError`
+- **답**: C
+
+`a: "one"`와 `a: "three"`는 동일한 키를 사용하고 있기 때문에 더 뒤에있는 `a: "three"`로 대체된다.
+
