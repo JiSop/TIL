@@ -686,3 +686,58 @@ console.log(obj);
 
 `a: "one"`와 `a: "three"`는 동일한 키를 사용하고 있기 때문에 더 뒤에있는 `a: "three"`로 대체된다.
 
+
+
+### Q26. JavaScript의 global execution context는 두개를 작성해요. : 전역객체와 "this" 키워드에요.
+
+- **선택지**
+  - A: true
+  - B: false
+  - C: 경우에 따라 달라요
+- **답**: A
+
+문제가 무슨 뜻인지 잘모르겠다.
+
+(동작환경에 따라서) 전역객체를 생성하고 전역객체에 this를 바인딩하는 걸 질문하는건가..
+
+p.s - 곧 globalThis로 편하게 구분하는 날이 온다. (<https://github.com/tc39/proposal-global>)
+
+
+
+### Q27.
+
+```javascript
+for (let i = 1; i < 5; i++) {
+  if (i === 3) continue;
+  console.log(i);
+}
+```
+
+- **선택지**
+  - A: `1` `2`
+  - B: `1` `2` `3`
+  - C: `1` `2` `4`
+  - D: `1` `3` `4`
+- **답**: C
+
+
+
+### Q28.
+
+```javascript
+String.prototype.giveLydiaPizza = () => {
+  return "Just give Lydia pizza already!";
+};
+
+const name = "Lydia";
+
+name.giveLydiaPizza();
+```
+
+- **선택지**
+  - A: `"Just give Lydia pizza already!"`
+  - B: `TypeError: not a function`
+  - C: `SyntaxError`
+  - D: `undefined`
+- **답**: A
+
