@@ -741,3 +741,48 @@ name.giveLydiaPizza();
   - D: `undefined`
 - **답**: A
 
+
+
+### Q29.
+
+```javascript
+const a = {};
+const b = { key: "b" };
+const c = { key: "c" };
+
+a[b] = 123;
+a[c] = 456;
+
+console.log(a[b]);
+```
+
+- **선택지**
+  - A: `123`
+  - B: `456`
+  - C: `undefined`
+  - D: `ReferenceError`
+- **답**: B
+
+`a["[object Object]"]`
+
+
+
+### Q30.
+
+```javascript
+const foo = () => console.log("First");
+const bar = () => setTimeout(() => console.log("Second"));
+const baz = () => console.log("Third");
+
+bar();
+foo();
+baz();
+```
+
+- **선택지**
+  - A: `First` `Second` `Third`
+  - B: `First` `Third` `Second`
+  - C: `Second` `First` `Third`
+  - D: `Second` `Third` `First`
+- **답**: B
+
