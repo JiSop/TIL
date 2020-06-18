@@ -786,3 +786,45 @@ baz();
   - D: `Second` `Third` `First`
 - **답**: B
 
+
+
+### Q31. 버튼을 클릭했을때 event.target은 무엇일까요?
+
+```html
+<div onclick="console.log('first div')">
+  <div onclick="console.log('second div')">
+    <button onclick="console.log('button')">
+      Click!
+    </button>
+  </div>
+</div>
+```
+
+- **선택지**
+  - A: 외부의 `div`
+  - B: 내부의 `div`
+  - C: `button`
+  - D: 중첩된 모든 요소의 배열
+- **답**: C
+
+
+
+### Q32. p태그를 클릭하면 로그의 출력은 무엇일까요?
+
+```html
+<div onclick="console.log('div')">
+  <p onclick="console.log('p')">
+    Click here!
+  </p>
+</div>
+```
+
+- **선택지**
+  - A: `p` `div`
+  - B: `div` `p`
+  - C: `p`
+  - D: `div`
+- **답**: A
+
+target인 `<p>` 태그에서 부터 버블링 되면서 이벤트 핸들러가 동작한다.
+
