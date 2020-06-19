@@ -809,7 +809,7 @@ baz();
 
 
 
-### Q32. p태그를 클릭하면 로그의 출력은 무엇일까요?
+### Q32. p 태그를 클릭하면 로그의 출력은 무엇일까요?
 
 ```html
 <div onclick="console.log('div')">
@@ -827,4 +827,55 @@ baz();
 - **답**: A
 
 target인 `<p>` 태그에서 부터 버블링 되면서 이벤트 핸들러가 동작한다.
+
+
+
+### Q33.
+
+```javascript
+const person = { name: "Lydia" };
+
+function sayHi(age) {
+  console.log(`${this.name} is ${age}`);
+}
+
+sayHi.call(person, 21);
+sayHi.bind(person, 21);
+```
+
+- **선택지**
+  - A: `undefined is 21` `Lydia is 21`
+  - B: `function` `function`
+  - C: `Lydia is 21` `Lydia is 21`
+  - D: `Lydia is 21` `function`
+- **답**: D
+
+`Function.prototype.call()` 메소드는 함수에 인수를 전달해 this에 바인딩하고 호출(실행)한다.
+
+> `call()` 은 유사 배열 객체에 배열 메소드(고차 함수)를 사용하려고 할 때 유용하다.
+
+`Function.prototype.bind()` call과 마찬가지로 인수를 전달해 this에 바인딩 하지만 호출은 하지 않고 해당 함수의 복사본을 리턴한다.
+
+> `bind()` 는 **메소드의 this** 와 **메소드 내부의 중첩 함수의 this** 를 일치시켜줄 때 유용하다.
+
+
+
+### Q34.
+
+```javascript
+function sayHi() {
+  return (() => 0)();
+}
+
+console.log(typeof sayHi());
+```
+
+- **선택지**
+  - A: `"object"`
+  - B: `"number"`
+  - C: `"function"`
+  - D: `"undefined"`
+- **답**: B
+
+함수 `sayHi()`는 즉시 실행 함수를 반환하고 이 즉시 실행 함수는 숫자 타입의 값 `0`을 반환한다.
 
