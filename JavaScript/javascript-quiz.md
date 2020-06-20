@@ -879,3 +879,39 @@ console.log(typeof sayHi());
 
 함수 `sayHi()`는 즉시 실행 함수를 반환하고 이 즉시 실행 함수는 숫자 타입의 값 `0`을 반환한다.
 
+
+
+### Q35. 이 값들 중 어느 것이 거짓 같은 값 일까요?
+
+```javascript
+0;
+new Number(0);
+("");
+(" ");
+new Boolean(false);
+undefined;
+```
+
+- **선택지**
+  - A: `0`, `''`, `undefined`
+  - B: `0`, `new Number(0)`, `''`, `new Boolean(false)`, `undefined`
+  - C: `0`, `''`, `new Boolean(false)`, `undefined`
+  - D: 모든 값은 거짓
+- **답**: A
+
+
+
+### Q36.
+
+```javascript
+console.log(typeof typeof 1);
+```
+
+- **선택지**
+  - A: `"number"`
+  - B: `"string"`
+  - C: `"object"`
+  - D: `"undefined"`
+- **답**: B
+
+p.s - 😮... 상상도 못한 문제 ㄴ(°0°)ㄱ
