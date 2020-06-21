@@ -915,3 +915,50 @@ console.log(typeof typeof 1);
 - **답**: B
 
 p.s - 😮... 상상도 못한 문제 ㄴ(°0°)ㄱ
+
+
+
+### Q37.
+
+```javascript
+const numbers = [1, 2, 3];
+numbers[10] = 11;
+console.log(numbers);
+```
+
+- **선택지**
+  - A: `[1, 2, 3, 7 x null, 11]`
+  - B: `[1, 2, 3, 11]`
+  - C: `[1, 2, 3, 7 x empty, 11]`
+  - D: `SyntaxError`
+- **답**: C
+
+실행 환경에 따라 다르게 나옴
+
+`numbers[3]` 부터 `numbers[9]` 의 값은 `undefined`
+
+
+
+### Q38.
+
+```javascript
+(() => {
+  let x, y;
+  try {
+    throw new Error();
+  } catch (x) {
+    (x = 1), (y = 2);
+    console.log(x);
+  }
+  console.log(x);
+  console.log(y);
+})();
+```
+
+- **선택지**
+  - A: `1` `undefined` `2`
+  - B: `undefined` `undefined` `undefined`
+  - C: `1` `1` `2`
+  - D: `1` `undefined` `undefined`
+- **답**: A
+
