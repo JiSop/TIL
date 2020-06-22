@@ -962,3 +962,56 @@ console.log(numbers);
   - D: `1` `undefined` `undefined`
 - **답**: A
 
+
+
+### Q39. JavaScript의 모든 것은...
+
+- **선택지**
+  - A: primitive 또는 object
+  - B: function 또는 object
+  - C: 함정 문제! objects만
+  - D: number 또는 object
+- **답**: A
+
+
+
+### Q40.
+
+```javascript
+[[0, 1], [2, 3]].reduce(
+  (acc, cur) => {
+    return acc.concat(cur);
+  },
+  [1, 2]
+);
+```
+
+- **선택지**
+  - A: `[0, 1, 2, 3, 1, 2]`
+  - B: `[6, 1, 2]`
+  - C: `[1, 2, 0, 1, 2, 3]`
+  - D: `[1, 2, 6]`
+- **답**: C
+
+초기값 `[1, 2]`를 가지고 실행된다.
+
+
+
+### Q41.
+
+```javascript
+!!null;
+!!"";
+!!1;
+```
+
+- **선택지**
+  - A: `false` `true` `false`
+  - B: `false` `false` `true`
+  - C: `false` `true` `true`
+  - D: `true` `true` `false`
+- **답**: B
+
+`null`, `""`은 Falsy
+
+`1`은 Truthy
