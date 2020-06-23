@@ -1015,3 +1015,69 @@ console.log(numbers);
 `null`, `""`은 Falsy
 
 `1`은 Truthy
+
+
+
+### Q42. `setInterval` 메소드는 브라우저에게 무엇을 리턴 할까요?
+
+```javascript
+setInterval(() => console.log("Hi"), 1000);
+```
+
+- **선택지**
+  - A: 유니크한 id
+  - B: 지정된 밀리초
+  - C: 통과된 함수
+  - D: `undefined`
+- **답**: A
+
+숫자로 이루어진 `intervalID`를 반환한다.
+
+> `setInterval()`과 `setTimeout()`은 ID를 공유한다.
+
+
+
+### Q43.
+
+```javascript
+[..."Lydia"];
+```
+
+- **선택지**
+  - A: `["L", "y", "d", "i", "a"]`
+  - B: `["Lydia"]`
+  - C: `[[], "Lydia"]`
+  - D: `[["L", "y", "d", "i", "a"]]`
+- **답**: A
+
+
+
+### Q44.
+
+```javascript
+function* generator(i) {
+  yield i;
+  yield i * 2;
+}
+
+const gen = generator(10);
+
+console.log(gen.next().value);
+console.log(gen.next().value);
+```
+
+- **선택지**
+  - A: `[0, 10], [10, 20]`
+  - B: `20, 20`
+  - C: `10, 20`
+  - D: `0, 10` 그리고 `10, 20`
+- **답**: C
+
+> 제너레이터 함수는 `yield` 키워드를 만나면 실행을 중단하고 뒤에 있는 값을 반환한다.
+
+L6, 제너레이터 객체 생성하고 `i`를 숫자 값 `10`으로 초기화
+
+L8, `next()` 메소드가 실행되고 `yield i`를 만나서 `10`을 출력
+
+L9, 다시한번 `next()` 메소드가 실행되고 `yield i * 2`를 만나서 `20`을 출력
+
