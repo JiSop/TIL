@@ -1081,3 +1081,86 @@ L8, `next()` 메소드가 실행되고 `yield i`를 만나서 `10`을 출력
 
 L9, 다시한번 `next()` 메소드가 실행되고 `yield i * 2`를 만나서 `20`을 출력
 
+
+
+### Q45.
+
+```javascript
+const firstPromise = new Promise((res, rej) => {
+  setTimeout(res, 500, "one");
+});
+
+const secondPromise = new Promise((res, rej) => {
+  setTimeout(res, 100, "two");
+});
+
+Promise.race([firstPromise, secondPromise]).then(res => console.log(res));
+```
+
+- **선택지**
+  - A: `"one"`
+  - B: `"two"`
+  - C: `"two" "one"`
+  - D: `"one" "two"`
+- **답**: B
+
+`Promise.race()`는 가장 먼저 처리된 프로미스가 resolve한 처리 결과를 resolve하는 새로운 프로미스를 반환하기 때문에 `secondPromise`의 `two`가 출력된다.
+
+
+
+### Q46.
+
+```javascript
+let person = { name: "Lydia" };
+const members = [person];
+person = null;
+
+console.log(members);
+```
+
+- **선택지**
+  - A: `null`
+  - B: `[null]`
+  - C: `[{}]`
+  - D: `[{ name: "Lydia" }]`
+- **답**: D
+
+L2, 변수 `members`의 값은 `[{ name: "Lydia" }]`이 되고 `members[0]`과 변수 `person`은 같은 객체를 참조하고 있다.
+
+L3, 변수 `person`의 값을 `null`로 변경하여도 `members[0]`의 참조는 바뀌지 않기 때문에 그대로 남게된다.
+
+
+
+### Q47.
+
+```javascript
+const person = {
+  name: "Lydia",
+  age: 21
+};
+
+for (const item in person) {
+  console.log(item);
+}
+```
+
+- **선택지**
+  - A: `{ name: "Lydia" }, { age: 21 }`
+  - B: `"name", "age"`
+  - C: `"Lydia", 21`
+  - D: `["name", "Lydia"], ["age", 21]`
+- **답**: B
+
+객체의 키를 출력한다. 값을 출력하고 싶다면 아래와 같이 하면 된다.
+
+```javascript
+const person = {
+  name: "Lydia",
+  age: 21
+};
+
+for (const item in person) {
+  console.log(person[item]);
+}
+```
+
