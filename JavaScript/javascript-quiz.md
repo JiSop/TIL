@@ -1164,3 +1164,57 @@ for (const item in person) {
 }
 ```
 
+
+
+### Q48.
+
+```javascript
+console.log(3 + 4 + "5");
+```
+
+- **선택지**
+  - A: `"345"`
+  - B: `"75"`
+  - C: `12`
+  - D: `"12"`
+- **답**: B
+
+
+
+### Q49. `num`의 값은 무엇일까요?
+
+```javascript
+const num = parseInt("7*6", 10);
+```
+
+- **선택지**
+  - A: `42`
+  - B: `"42"`
+  - C: `7`
+  - D: `NaN`
+- **답**: C
+
+문자열에서 첫 번째 10진수인 `7`을 변수 `num`에 할당한다.
+
+> `parseInt()`는 첫 번째 문자열을 숫자로 변환할 수 없는 경우 `NaN`를 반환한다
+
+
+
+### Q50.
+
+```javascript
+[1, 2, 3].map(num => {
+  if (typeof num === "number") return;
+  return num * 2;
+  });
+```
+
+- **선택지**
+  - A: `[]`
+  - B: `[null, null, null]`
+  - C: `[undefined, undefined, undefined]`
+  - D: `[ 3 x empty ]`
+- **답**: C
+
+L2, 객체 내부의 `[1, 2, 3]`은 모두 숫자이기 때문에 if문이 실행되어 암묵적으로 `undefined`를 반환한다.
+
