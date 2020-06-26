@@ -1216,5 +1216,89 @@ const num = parseInt("7*6", 10);
   - D: `[ 3 x empty ]`
 - **답**: C
 
-L2, 객체 내부의 `[1, 2, 3]`은 모두 숫자이기 때문에 if문이 실행되어 암묵적으로 `undefined`를 반환한다.
+객체 내부의 `[1, 2, 3]`은 모두 숫자이기 때문에 L2의 if문이 실행되어 암묵적으로 `undefined`를 반환한다.
+
+
+
+### Q51.
+
+```javascript
+function getInfo(member, year) {
+  member.name = "Lydia";
+  year = "1998";
+}
+
+const person = { name: "Sarah" };
+const birthYear = "1997";
+
+getInfo(person, birthYear);
+
+console.log(person, birthYear);
+```
+
+- **선택지**
+  - A: `{ name: "Lydia" }, "1997"`
+  - B: `{ name: "Sarah" }, "1998"`
+  - C: `{ name: "Lydia" }, "1998"`
+  - D: `{ name: "Sarah" }, "1997"`
+- **답**: A
+
+변수 `birthYear`는 원시형 타입(Primitive Type)인 문자열 `"1997"`이다.  
+원시형은 pass-by-value이기 때문에 함수 `getInfo()`의 인수 `year`로 사용될때 값이 복사되어 전달된다. 따라서 `birthYear`와 `year`는 같은 문자열 타입의 값 `"1997"`을 가지고 있을 뿐 서로 다른 참조를 가지고있기 때문에 함수 `getInfo()` 내부, L3에서 `year = "1998"`로 값을 변경해도 변수 `birthYear`에 는 영향이 없다.
+
+변수 `person`은 객체 타입(Object Type)이다.  
+객체 타입은 pass-by-reference이기 때문에 함수 `getInfo()`의 인수 `member`로 사용될때 (메모리의) 참조 값을 복사해서 전달한다. 따라서 `person`과 `member`는 같은 곳을 참조하고 있기 때문에 함수 `getInfo()` 내부, L2에서 ` member.name = "Lydia"`로 값을 변경하면 변수 `person`도 영향을 받아 값이 변경된다.
+
+> 변수 `person`이 const 키워드를 사용해 선언되었다 해도 값을 객체로 가지고 있기 때문에 재할당과 같은 식별자를 가지는 변수를 선언할 수 없게 막을 수 있을 뿐, 값으로 가지고 있는 객체의 변경을 막을수 없다. 객체 타입은 불변성을 보장하지 않는다.
+>
+> 불변성을 보장하기 위해 객체 타입의 값은 복사하여 다루어야 한다.
+
+
+
+### Q52.
+
+```javascript
+function greeting() {
+  throw "Hello world!";
+}
+
+function sayHi() {
+  try {
+    const data = greeting();
+    console.log("It worked!", data);
+  } catch (e) {
+    console.log("Oh no an error:", e);
+  }
+}
+
+sayHi();
+```
+
+- **선택지**
+  - A: `"It worked! Hello world!"`
+  - B: `"Oh no an error: undefined"`
+  - C: `SyntaxError: can only throw Error objects`
+  - D: `"Oh no an error: Hello world!"`
+- **답**: D
+
+
+
+### Q53.
+
+```javascript
+function Car() {
+  this.make = "Lamborghini";
+  return { make: "Maserati" };
+}
+
+const myCar = new Car();
+console.log(myCar.make);
+```
+
+- **선택지**
+  - A: `"Lamborghini"`
+  - B: `"Maserati"`
+  - C: `ReferenceError`
+  - D: `TypeError`
+- **답**: B
 
