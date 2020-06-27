@@ -6,6 +6,7 @@
 
 ## [JavaScript](./JavaScript)
 
+- [JavaScript Quiz](./JavaScript/javascript-quiz.md)
 - [리터럴(Literal)](./JavaScript/javascript-literal.md#literal)
 - [데이터 타입(Data type)](./JavaScript/javascript-data-type.md)
 - [객체(Object)](./JavaScript/javascript-object.md)
