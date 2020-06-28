@@ -1302,3 +1302,54 @@ console.log(myCar.make);
   - D: `TypeError`
 - **답**: B
 
+
+
+### Q54.
+
+```javascript
+(() => {
+  let x = (y = 10);
+})();
+
+console.log(typeof x);
+console.log(typeof y);
+```
+
+- **선택지**
+  - A: `"undefined", "number"`
+  - B: `"number", "number"`
+  - C: `"object", "number"`
+  - D: `"number", "undefined"`
+- **답**: A
+
+
+
+### Q55.
+
+```javascript
+class Dog {
+  constructor(name) {
+    this.name = name;
+  }
+}
+
+Dog.prototype.bark = function() {
+  console.log(`Woof I am ${this.name}`);
+};
+
+const pet = new Dog("Mara");
+
+pet.bark();
+
+delete Dog.prototype.bark;
+
+pet.bark();
+```
+
+- **선택지**
+  - A: `"Woof I am Mara"`, `TypeError`
+  - B: `"Woof I am Mara"`, `"Woof I am Mara"`
+  - C: `"Woof I am Mara"`, `undefined`
+  - D: `TypeError`, `TypeError`
+- **답**: A
+
