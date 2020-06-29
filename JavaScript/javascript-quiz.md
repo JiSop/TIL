@@ -1353,3 +1353,90 @@ pet.bark();
   - D: `TypeError`, `TypeError`
 - **답**: A
 
+
+
+### Q56.
+
+```javascript
+const set = new Set([1, 1, 2, 3, 4]);
+
+console.log(set);
+```
+
+- **선택지**
+  - A: `[1, 1, 2, 3, 4]`
+  - B: `[1, 2, 3, 4]`
+  - C: `{1, 1, 2, 3, 4}`
+  - D: `{1, 2, 3, 4}`
+- **답**: D
+
+
+
+### Q57.
+
+```javascript
+// counter.js
+let counter = 10;
+export default counter;
+```
+
+```javascript
+// index.js
+import myCounter from "./counter";
+
+myCounter += 1;
+
+console.log(myCounter);
+```
+
+- **선택지**
+  - A: `10`
+  - B: `11`
+  - C: `Error`
+  - D: `NaN`
+- **답**: C
+
+import 된 모듈은 *read-only*
+
+
+
+### Q58.
+
+```javascript
+const name = "Lydia";
+age = 21;
+
+console.log(delete name);
+console.log(delete age);
+```
+
+- **선택지**
+  - A: `false`, `true`
+  - B: `"Lydia"`, `21`
+  - C: `true`, `true`
+  - D: `undefined`, `undefined`
+- **답**: A
+
+`delete` 연산자는 객체의 프로퍼티를 삭제하고 성공하면 `true`를 반환한다.
+
+L2, `age`는 전역 객체의 프로퍼티 임으로 삭제가 가능하다.
+
+
+
+### Q59.
+
+```javascript
+const numbers = [1, 2, 3, 4, 5];
+const [y] = numbers;
+
+console.log(y);
+```
+
+- **선택지**
+  - A: `[[1, 2, 3, 4, 5]]`
+  - B: `[1, 2, 3, 4, 5]`
+  - C: `1`
+  - D: `[1]`
+- **답**: C
+
+`numbers`의 첫 번째 요소인 `1`을 `y`에 구조 분해 할당한다.
