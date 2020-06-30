@@ -1440,3 +1440,72 @@ console.log(y);
 - **답**: C
 
 `numbers`의 첫 번째 요소인 `1`을 `y`에 구조 분해 할당한다.
+
+
+
+### Q60.
+
+```javascript
+const user = { name: "Lydia", age: 21 };
+const admin = { admin: true, ...user };
+
+console.log(admin);
+```
+
+- **선택지**
+  - A: `{ admin: true, user: { name: "Lydia", age: 21 } }`
+  - B: `{ admin: true, name: "Lydia", age: 21 }`
+  - C: `{ admin: true, user: ["Lydia", 21] }`
+  - D: `{ admin: true }`
+- **답**: B
+
+
+
+### Q61.
+
+```javascript
+const person = { name: "Lydia" };
+
+Object.defineProperty(person, "age", { value: 21 });
+
+console.log(person);
+console.log(Object.keys(person));
+```
+
+- **선택지**
+  - A: `{ name: "Lydia", age: 21 }`, `["name", "age"]`
+  - B: `{ name: "Lydia", age: 21 }`, `["name"]`
+  - C: `{ name: "Lydia"}`, `["name", "age"]`
+  - D: `{ name: "Lydia"}`, `["age"]`
+- **답**: B
+
+`Object.defineProperty()`는 객체에 프로퍼티를 추가하거나 수정할 수 있다.
+
+`defineProperty()` 메소드를 사용해 추가한 프로퍼티는 기본적으로 불변하고 열거와 수정이 불가능하다.
+
+> 일반적인 프로퍼티 할당을 통해 추가하면 열거와 수정이 가능하다.
+
+
+
+### Q62.
+
+```javascript
+const settings = {
+  username: "lydiahallie",
+  level: 19,
+  health: 90
+};
+
+const data = JSON.stringify(settings, ["level", "health"]);
+console.log(data);
+```
+
+- **선택지**
+  - A: `"{"level":19, "health":90}"`
+  - B: `"{"username": "lydiahallie"}"`
+  - C: `"["level", "health"]"`
+  - D: `"{"username": "lydiahallie", "level":19, "health":90}"`
+- **답**: A
+
+참조: [JSON.stringify() - JavaScript | MDN](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify)
+
