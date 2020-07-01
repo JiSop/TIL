@@ -1509,3 +1509,64 @@ console.log(data);
 
 참조: [JSON.stringify() - JavaScript | MDN](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify)
 
+
+
+### Q63.
+
+```javascript
+let num = 10;
+
+const increaseNumber = () => num++;
+const increasePassedNumber = number => number++;
+
+const num1 = increaseNumber();
+const num2 = increasePassedNumber(num1);
+
+console.log(num1);
+console.log(num2);
+```
+
+- **선택지**
+  - A: `10`, `10`
+  - B: `10`, `11`
+  - C: `11`, `11`
+  - D: `11`, `12`
+- **답**: A
+
+Q16과  유사한 문제
+
+L6, 반환 후에 값이 증가하기 때문에 변수 `num1`은 숫자 값 `10`이다.
+
+> 함수 `increaseNumber()`는 `num`의 숫자 값 `10`을 반환하고 접미에 사용된 증감 연산자가 값을 증가시켜 `11` 된다.
+
+L7, 위와 유사하다. 함수 `increasePassedNumber()`의 파라미터 `number`에 변수 `num1`의 값 `10`을 전달해서 사용한다.
+
+> 함수 `increaseNumber()`는 L1에서 선언된 변수 `num`의 값을 변화 시키지만 함수 `increasePassedNumber()`는 변수 `num`에 영향을 주지 않는다.
+
+
+
+### Q64.
+
+```javascript
+const value = { number: 10 };
+
+const multiply = (x = { ...value }) => {
+  console.log(x.number *= 2);
+};
+
+multiply();
+multiply();
+multiply(value);
+multiply(value);
+```
+
+- **선택지**
+  - A: `20`, `40`, `80`, `160`
+  - B: `20`, `40`, `20`, `40`
+  - C: `20`, `20`, `20`, `40`
+  - D: `NaN`, `NaN`, `20`, `40`
+- **답**: C
+
+함수 `multiply`의 파라미터 `x`는 기본 값으로 변수 `value`를 스프레드 연산자로 복사해서 사용하고 있기 때문에 변수 `value`가 가르키는 객체에 영향을 주지 않는다.
+
+L9, L10, `multiply(value)`는 변수 `value`가 가르키는 객체를 전달받아 수정하기 때문에 값이 증가한다.
