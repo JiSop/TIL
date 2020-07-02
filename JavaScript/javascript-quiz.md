@@ -1570,3 +1570,67 @@ multiply(value);
 함수 `multiply`의 파라미터 `x`는 기본 값으로 변수 `value`를 스프레드 연산자로 복사해서 사용하고 있기 때문에 변수 `value`가 가르키는 객체에 영향을 주지 않는다.
 
 L9, L10, `multiply(value)`는 변수 `value`가 가르키는 객체를 전달받아 수정하기 때문에 값이 증가한다.
+
+
+
+### Q65.
+
+```javascript
+[1, 2, 3, 4].reduce((x, y) => console.log(x, y));
+```
+
+- **선택지**
+  - A: `1` `2` 그리고 `3` `3` 그리고 `6` `4`
+  - B: `1` `2` 그리고 `2` `3` 그리고 `3` `4`
+  - C: `1` `undefined` 그리고 `2` `undefined` 그리고 `3` `undefined` 그리고 `4` `undefined`
+  - D: `1` `2` 그리고 `undefined` `3` 그리고 `undefined` `4`
+- **답**: D
+
+Q50과 유사
+
+콜백 함수가 값을 리턴하지 않기 때문에 현재 값만 출력한다.
+
+처음 출력에서 `x`가 `1`인 이유는 배열의 첫 번째 값을 초기값으로 사용했기 때문이다.
+
+
+
+### Q66. `Dog` 클래스를 성공적으로 확장할 수 있는 생성자는 어느 것일까요?
+
+```javascript
+class Dog {
+  constructor(name) {
+    this.name = name;
+  }
+};
+
+class Labrador extends Dog {
+  // 1 
+  constructor(name, size) {
+    this.size = size;
+  }
+  // 2
+  constructor(name, size) {
+    super(name);
+    this.size = size;
+  }
+  // 3
+  constructor(size) {
+    super(name);
+    this.size = size;
+  }
+  // 4 
+  constructor(name, size) {
+    this.name = name;
+    this.size = size;
+  }
+
+};
+```
+
+- **선택지**
+  - A: 1
+  - B: 2
+  - C: 3
+  - D: 4
+- **답**: B
+
