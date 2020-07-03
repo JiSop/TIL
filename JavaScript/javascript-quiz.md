@@ -1634,3 +1634,47 @@ class Labrador extends Dog {
   - D: 4
 - **답**: B
 
+
+
+### Q67.
+
+```javascript
+// index.js
+console.log('running index.js');
+import { sum } from './sum.js';
+console.log(sum(1, 2));
+
+// sum.js
+console.log('running sum.js');
+export const sum = (a, b) => a + b;
+```
+
+- **선택지**
+  - A: `running index.js`, `running sum.js`, `3`
+  - B: `running sum.js`, `running index.js`, `3`
+  - C: `running sum.js`, `3`, `running index.js`
+  - D: `running index.js`, `undefined`, `running sum.js`
+- **답**: B
+
+참고: <https://github.com/lydiahallie/javascript-questions/issues/218>
+
+
+
+### Q68.
+
+```javascript
+console.log(Number(2) === Number(2))
+console.log(Boolean(false) === Boolean(false))
+console.log(Symbol('foo') === Symbol('foo'))
+```
+
+- **선택지**
+  - A: `true`, `true`, `false`
+  - B: `false`, `true`, `false`
+  - C: `true`, `false`, `true`
+  - D: `true`, `true`, `true`
+- **답**: A
+
+symbol은 항상 고유하다.
+
+참고: <https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Symbol>
