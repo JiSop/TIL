@@ -1678,3 +1678,39 @@ console.log(Symbol('foo') === Symbol('foo'))
 symbol은 항상 고유하다.
 
 참고: <https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Symbol>
+
+
+
+### Q69.
+
+```javascript
+const name = "Lydia Hallie"
+console.log(name.padStart(13))
+console.log(name.padStart(2))
+```
+
+- **선택지**
+  - A: `"Lydia Hallie"`, `"Lydia Hallie"`
+  - B: `" Lydia Hallie"`, `" Lydia Hallie"` (`"[13x whitespace]Lydia Hallie"`, `"[2x whitespace]Lydia Hallie"`)
+  - C: `" Lydia Hallie"`, `"Lydia Hallie"` (`"[1x whitespace]Lydia Hallie"`, `"Lydia Hallie"`)
+  - D: `"Lydia Hallie"`, `"Lyd"`
+- **답**: C
+
+참고: [String.prototype.padStart() - JavaScript | MDN](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/String/padStart) , [tc39/proposal-string-pad-start-end](https://github.com/tc39/proposal-string-pad-start-end)
+
+
+
+### Q70.
+
+```javascript
+console.log("🥑" + "💻");
+```
+
+- **선택지**
+  - A: `"🥑💻"`
+  - B: `257548`
+  - C: 해당 코드 주소를 포함하는 문자열
+  - D: 에러
+- **답**: A
+
+...?
