@@ -1714,3 +1714,52 @@ console.log("🥑" + "💻");
 - **답**: A
 
 ...?
+
+
+
+### Q71. console.log 표현식 뒤에 언급된 값을 어떻게 출력할 수 있을까요?
+
+```javascript
+function* startGame() {
+  const answer = yield "Do you love JavaScript?";
+  if (answer !== "Yes") {
+    return "Oh wow... Guess we're gone here";
+  }
+  return "JavaScript loves you back ❤️";
+}
+
+const game = startGame();
+console.log(/* 1 */); // Do you love JavaScript?
+console.log(/* 2 */); // JavaScript loves you back ❤️
+```
+
+- **선택지**
+  - A: `game.next("Yes").value` 그리고 `game.next().value`
+  - B: `game.next.value("Yes")` 그리고 `game.next.value()`
+  - C: `game.next().value` 그리고 `game.next("Yes").value`
+  - D: `game.next.value()` 그리고 `game.next.value("Yes")`
+- **답**: C
+
+
+
+### Q72.
+
+```javascript
+console.log(String.raw`Hello\nworld`);
+```
+
+- **선택지**
+  - A: `Hello world!`
+  - B: `Hello`
+       `world`
+  - C: `Hello\nworld`
+  - D: `Hello\n`
+       `world`
+- **답**: C
+
+`String.raw` 메소드는 이스케이스 문자를 무시한다.
+
+참고: [String.raw() - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/raw)
+
+
+
