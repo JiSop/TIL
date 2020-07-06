@@ -1763,3 +1763,70 @@ console.log(String.raw`Hello\nworld`);
 
 
 
+### Q73.
+
+```javascript
+async function getData() {
+  return await Promise.resolve("I made it!");
+}
+
+const data = getData();
+console.log(data);
+```
+
+- **선택지**
+  - A: `"I made it!"`
+  - B: `Promise {<resolved>: "I made it!"}`
+  - C: `Promise {<pending>}`
+  - D: `undefined`
+- **답**: C
+
+
+
+### Q74.
+
+```javascript
+function addToList(item, list) {
+  return list.push(item);
+}
+
+const result = addToList("apple", ["banana"]);
+console.log(result);
+```
+
+- **선택지**
+  - A: `['banana', 'apple']`
+  - B: `2`
+  - C: `true`
+  - D: `undefined`
+- **답**: B
+
+`Array.prototype.push()`는 배열의 끝에 요소를 추가한 후 배열의 길이를 반환하기 때문에 `2`
+
+> 문제 원본의 해설에 '새로운 배열의 길이를 리턴해요!' 라고 설명이 되어있는데 새로운 배열을 반환한다고 오해하기 쉬운 문장인 것 같다. `push()` `pop()` `unshift()` `shift()` 이 메소드들은 새로운 배열을 반환하지 않고 모두 원본 배열을 수정한다.
+>
+> p.s - 적고보니 밑에 추가적으로 설명이 있었다 😅
+
+
+
+### Q75.
+
+```javascript
+const box = { x: 10, y: 20 };
+
+Object.freeze(box);
+
+const shape = box;
+shape.x = 100;
+
+console.log(shape);
+```
+
+- **선택지**
+  - A: `{ x: 100, y: 20 }`
+  - B: `{ x: 10, y: 20 }`
+  - C: `{ x: 100 }`
+  - D: `ReferenceError`
+- **답**: B
+
+변수 `box` 와 `shape`는 같은 객체를 참조하고 있다. L3에서 해당 객체를 동결시켰기 때문에 L6에 수정이 불가능하다.
