@@ -1829,4 +1829,81 @@ console.log(shape);
   - D: `ReferenceError`
 - **답**: B
 
-변수 `box` 와 `shape`는 같은 객체를 참조하고 있다. L3에서 해당 객체를 동결시켰기 때문에 L6에 수정이 불가능하다.
+변수 `box` 와 `shape`는 같은 객체를 참조하고 있다. L3에서 해당 객체를 동결시켰기 때문에 L6에서 수정이 불가능하다.
+
+
+
+### Q76.
+
+```javascript
+const { name: myName } = { name: "Lydia" };
+
+console.log(name);
+```
+
+- **선택지**
+  - A: `"Lydia"`
+  - B: `"myName"`
+  - C: `undefined`
+  - D: `ReferenceError`
+- **답**: D
+
+객체 구조 분해 할당, 프로퍼티 키를 기준으로 구조 분해 할당이 이루어진다. 
+
+`myName`은 문자열 값이 아니라 식별자이다.
+
+**참조**
+
+- [구조 분해 할당 | javascript.info](https://ko.javascript.info/destructuring-assignment)
+- [구조 분해 할당 - JavaScript | MDN](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
+- [tc39/proposal-object-rest-spread](https://github.com/tc39/proposal-object-rest-spread)
+
+
+
+### Q77. 이것은 pure 함수 일까요?
+
+```javascript
+function sum(a, b) {
+  return a + b;
+}
+```
+
+- **선택지**
+  - A: Yes
+  - B: No
+- **답**: A
+
+순수 함수는 항상 같은 결과를 반환한다.
+
+함수 `sum`에 전달되는 값이 동일하다면 항상 같은 결과를 반환하기 때문에 순수 함수이다.
+
+
+
+### Q78.
+
+```javascript
+const add = () => {
+  const cache = {};
+  return num => {
+    if (num in cache) {
+      return `From cache! ${cache[num]}`;
+    } else {
+      const result = num + 10;
+      cache[num] = result;
+      return `Calculated! ${result}`;
+    }
+  };
+};
+
+const addFunction = add();
+console.log(addFunction(10));
+console.log(addFunction(10));
+console.log(addFunction(5 * 2));
+```
+
+- **선택지**
+  - A: `Calculated! 20` `Calculated! 20` `Calculated! 20`
+  - B: `Calculated! 20` `From cache! 20` `Calculated! 20`
+  - C: `Calculated! 20` `From cache! 20` `From cache! 20`
+  - D: `Calculated! 20` `From cache! 20` `Error`
+- **답**: C
