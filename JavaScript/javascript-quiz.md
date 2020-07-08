@@ -1907,3 +1907,108 @@ console.log(addFunction(5 * 2));
   - C: `Calculated! 20` `From cache! 20` `From cache! 20`
   - D: `Calculated! 20` `From cache! 20` `Error`
 - **답**: C
+
+
+
+### Q79.
+
+```javascript
+const myLifeSummedUp = ["☕", "💻", "🍷", "🍫"]
+
+for (let item in myLifeSummedUp) {
+  console.log(item);
+}
+
+for (let item of myLifeSummedUp) {
+  console.log(item);
+}
+```
+
+- **선택지**
+  - A: `0` `1` `2` `3` 그리고 `"☕"` `"💻"` `"🍷"` `"🍫"`
+  - B: `"☕"` `"💻"` `"🍷"` `"🍫"` 그리고 `"☕"` `"💻"` `"🍷"` `"🍫"`
+  - C: `"☕"` `"💻"` `"🍷"` `"🍫"` 그리고 `0` `1` `2` `3`
+  - D: `0` `1` `2` `3` 그리고 `{0: "☕", 1: "💻", 2: "🍷", 3: "🍫"}`
+- **답**: A
+
+
+
+### Q80.
+
+```javascript
+const list = [1 + 2, 1 * 2, 1 / 2]
+console.log(list);
+```
+
+- **선택지**
+  - A: `["1 + 2", "1 * 2", "1 / 2"]`
+  - B: `["12", 2, 0.5]`
+  - C: `[3, 2, 0.5]`
+  - D: `[1, 1, 1]`
+- **답**: C
+
+
+
+### Q81.
+
+```javascript
+function sayHi(name) {
+  return `Hi there, ${name}`
+}
+
+console.log(sayHi());
+```
+
+- **선택지**
+  - A: `Hi there,`
+  - B: `Hi there, undefined`
+  - C: `Hi there, null`
+  - D: `ReferenceError`
+- **답**: B
+
+
+
+### Q82.
+
+```javascript
+var status = "😎";
+
+setTimeout(() => {
+  const status = "😍";
+
+  const data = {
+    status: "🥑",
+    getStatus() {
+      return this.status;
+    }
+  };
+
+  console.log(data.getStatus());
+  console.log(data.getStatus.call(this));
+}, 0);
+```
+
+- **선택지**
+  - A: `"🥑"` 그리고 `"😍"`
+  - B: `"🥑"` 그리고 `"😎"`
+  - C: `"😍"` 그리고 `"😎"`
+  - D: `"😎"` 그리고 `"😎"`
+- **답**: B
+
+
+
+---
+
+```markdown
+### Q.
+
+​```javascript
+
+​```
+
+- **선택지**
+  - 
+- **답**:
+
+```
+
