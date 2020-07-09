@@ -1997,6 +1997,77 @@ setTimeout(() => {
 
 
 
+### Q83.
+
+```javascript
+const person = {
+  name: "Lydia",
+  age: 21
+};
+
+let city = person.city;
+city = "Amsterdam";
+
+console.log(person);
+```
+
+- **선택지**
+  - A: `{ name: "Lydia", age: 21 }`
+  - B: `{ name: "Lydia", age: 21, city: "Amsterdam" }`
+  - C: `{ name: "Lydia", age: 21, city: undefined }`
+  - D: `"Amsterdam"`
+- **답**: A
+
+L6, 변수 `city`는 '객체 `person`'이 가지는 '프로퍼티 `city`'를 참조하는데 `person.city`는 존재하지 않기 때문에 변수 `city`의 값은 `undefined`이다.
+
+L7, 변수 `city`의 값이 문자열 `"Amsterdam"`으로 변경 되었을 뿐, 객체 `person`에 영향을 주지 않는다.
+
+
+
+### Q84.
+
+```javascript
+function checkAge(age) {
+  if (age < 18) {
+    const message = "Sorry, you're too young.";
+  } else {
+    const message = "Yay! You're old enough!";
+  }
+
+  return message;
+}
+
+console.log(checkAge(21));
+```
+
+- **선택지**
+  - A: `"Sorry, you're too young."`
+  - B: `"Yay! You're old enough!"`
+  - C: `ReferenceError`
+  - D: `undefined`
+- **답**: C
+
+`let`, `const` 키워드를 사용해 선언한 변수는 블록 스코프를 갖는다.
+
+
+
+### Q85. `true`를 인수로 전달 할 수 없도록 주어졌을 때, `hasName`을 `true`로 설정할 수 있는 방법은 어느 것 일까요?
+
+```javascript
+function getName(name) {
+  const hasName = //
+}
+```
+
+- **선택지**
+  - A: `!!name`
+  - B: `name`
+  - C: `new Boolean(name)`
+  - D: `name.length`
+- **답**: A
+
+
+
 ---
 
 ```markdown
