@@ -2051,7 +2051,24 @@ console.log(checkAge(21));
 
 
 
-### Q85. `true`를 인수로 전달 할 수 없도록 주어졌을 때, `hasName`을 `true`로 설정할 수 있는 방법은 어느 것 일까요?
+### Q85. 어떤 종류의 정보가 출력될까요?
+
+```javascript
+fetch('https://www.website.com/api/user/1')
+  .then(res => res.json())
+  .then(res => console.log(res));
+```
+
+- **선택지**
+  - A: `fetch` 메소드의 결과
+  - B: `fetch` 메소드의 두번째 호출 결과
+  - C: 이전 `.then()`에서 callback된 결과
+  - D: 항상 undefined
+- **답**: C
+
+
+
+### Q86. `true`를 인수로 전달 할 수 없도록 주어졌을 때, `hasName`을 `true`로 설정할 수 있는 방법은 어느 것 일까요?
 
 ```javascript
 function getName(name) {
@@ -2064,6 +2081,64 @@ function getName(name) {
   - B: `name`
   - C: `new Boolean(name)`
   - D: `name.length`
+- **답**: A
+
+
+
+### Q87.
+
+```javascript
+console.log("I want pizza"[0]);
+```
+
+- **선택지**
+  - A: `"""`
+  - B: `"I"`
+  - C: `SyntaxError`
+  - D: `undefined`
+- **답**: B
+
+문자열은 유사 배열이다.
+
+
+
+### Q88.
+
+```javascript
+function sum(num1, num2 = num1) {
+  console.log(num1 + num2)
+}
+
+sum(10)
+```
+
+- **선택지**
+  - A: `NaN`
+  - B: `20`
+  - C: `ReferenceError`
+  - D: `undefined`
+- **답**: B
+
+
+
+### Q89.
+
+```javascript
+// module.js 
+export default () => "Hello world"
+export const name = "Lydia"
+
+// index.js 
+import * as data from "./module"
+
+console.log(data)
+```
+
+- **선택지**
+  - A: `{ default: function default(), name: "Lydia" }`
+  - B: `{ default: function default() }`
+  - C: `{ default: "Hello world", name: "Lydia" }`
+  - D: Global object of `module.js`
 - **답**: A
 
 
