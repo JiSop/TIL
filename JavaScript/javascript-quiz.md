@@ -2143,6 +2143,47 @@ console.log(data)
 
 
 
+### Q90.
+
+```javascript
+class Person {
+  constructor(name) {
+    this.name = name
+  }
+}
+
+const member = new Person("John")
+console.log(typeof member)
+```
+
+- **선택지**
+  - A: `"class"`
+  - B: `"function"`
+  - C: `"object"`
+  - D: `"string"`
+- **답**: C
+
+
+
+### Q91.
+
+```javascript
+let newList = [1, 2, 3].push(4)
+
+console.log(newList.push(5))
+```
+
+- **선택지**
+  - A: `[1, 2, 3, 4, 5]`
+  - B: `[1, 2, 3, 5]`
+  - C: `[1, 2, 3, 4]`
+  - D: `Error`
+- **답**: D
+
+Q74 참고
+
+
+
 ---
 
 ```markdown
