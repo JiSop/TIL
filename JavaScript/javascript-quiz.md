@@ -2184,6 +2184,111 @@ Q74 참고
 
 
 
+### Q92.
+
+```javascript
+function giveLydiaPizza() {
+  return "Here is pizza!"
+}
+
+const giveLydiaChocolate = () => "Here's chocolate... now go hit the gym already."
+
+console.log(giveLydiaPizza.prototype)
+console.log(giveLydiaChocolate.prototype)
+```
+
+- **선택지**
+  - A: `{ constructor: ...}` `{ constructor: ...}`
+  - B: `{}` `{ constructor: ...}`
+  - C: `{ constructor: ...}` `{}`
+  - D: `{ constructor: ...}` `undefined`
+- **답**: D
+
+화살표 함수는 non-constructor이기 때문에 생성자 함수로 사용할 수 없다.
+
+생성자 함수로 사용할 수 없다는 것은 인스턴스를 생성할 수 없다는 뜻이다. 
+
+즉, ptototype 프로퍼티가 없고 프로토타입도 생성하지 않는다.
+
+
+
+### Q93.
+
+```javascript
+const person = {
+  name: "Lydia",
+  age: 21
+};
+
+for (const [x, y] of Object.entries(person)) {
+  console.log(x, y)
+}
+```
+
+- **선택지**
+  - A: `name` `Lydia` 그리고 `age` `21`
+  - B: `["name", "Lydia"]` 그리고 `["age", 21]`
+  - C: `["name", "age"]` 그리고 `undefined`
+  - D: `Error`
+- **답**: A
+
+참고 - [Object.entries() - JavaScript | MDN](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Object/entries)
+
+
+
+### Q94.
+
+```javascript
+function getItems(fruitList, ...args, favoriteFruit) {
+  return [...fruitList, ...args, favoriteFruit]
+}
+
+console.log(getItems(["banana", "apple"], "pear", "orange"));
+```
+
+- **선택지**
+  - A: `["banana", "apple", "pear", "orange"]`
+  - B: `[["banana", "apple"], "pear", "orange"]`
+  - C: `["banana", "apple", ["pear"], "orange"]`
+  - D: `SyntaxError`
+- **답**: D
+
+rest 파라미터는 마지막에 사용해야한다.
+
+참고 - [Rest 파라미터 - JavaScript | MDN](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Functions/rest_parameters)
+
+
+
+### Q95.
+
+```javascript
+function nums(a, b) {
+  if
+  (a > b)
+  console.log('a is bigger')
+  else 
+  console.log('b is bigger')
+  return 
+  a + b
+}
+
+console.log(nums(4, 2))
+console.log(nums(1, 2))
+```
+
+- **선택지**
+  - A: `a is bigger`, `6` 그리고 `b is bigger`, `3`
+  - B: `a is bigger`, `undefined` 그리고 `b is bigger`, `undefined`
+  - C: `undefined` 그리고 `undefined`
+  - D: `SyntaxError`
+- **답**: B
+
+자바스크립트는 세미콜론을 명시적으로 사용하지 않아도 자동으로 삽입해준다.
+
+참고 - Q50
+
+
+
 ---
 
 ```markdown
