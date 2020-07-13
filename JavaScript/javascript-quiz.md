@@ -2289,6 +2289,119 @@ console.log(nums(1, 2))
 
 
 
+### Q96.
+
+```javascript
+class Person {
+  constructor() {
+    this.name = "Lydia"
+  }
+}
+
+Person = class AnotherPerson {
+  constructor() {
+    this.name = "Sarah"
+  }
+}
+
+const member = new Person()
+console.log(member.name)
+```
+
+- **선택지**
+  - A: `"Lydia"`
+  - B: `"Sarah"`
+  - C: `Error: cannot redeclare Person`
+  - D: `SyntaxError`
+- **답**: B
+
+
+
+### Q97.
+
+```javascript
+const info = {
+  [Symbol('a')]: 'b'
+}
+
+console.log(info)
+console.log(Object.keys(info))
+```
+
+- **선택지**
+  - A: `{Symbol('a'): 'b'}` 그리고 `["{Symbol('a')"]`
+  - B: `{}` 그리고 `[]`
+  - C: `{ a: "b" }` 그리고 `["a"]`
+  - D: `{Symbol('a'): 'b'}` 그리고 `[]`
+- **답**: D
+
+symbol은 열거가 불가능하다.
+
+
+
+### Q98.
+
+```javascript
+const getList = ([x, ...y]) => [x, y]
+const getUser = user => { name: user.name, age: user.age }
+
+const list = [1, 2, 3, 4]
+const user = { name: "Lydia", age: 21 }
+
+console.log(getList(list))
+console.log(getUser(user))
+```
+
+- **선택지**
+  - A: `[1, [2, 3, 4]]` 그리고 `undefined`
+  - B: `[1, [2, 3, 4]]` 그리고 `{ name: "Lydia", age: 21 }`
+  - C: `[1, 2, 3, 4]` 그리고 `{ name: "Lydia", age: 21 }`
+  - D: `Error` 그리고 `{ name: "Lydia", age: 21 }`
+- **답**: A
+
+L2, 반환하는 객체를 소괄호로 감싸야한다.
+
+
+
+### Q99.
+
+```javascript
+const name = "Lydia"
+
+console.log(name())
+```
+
+- **선택지**
+  - A: `SyntaxError`
+  - B: `ReferenceError`
+  - C: `TypeError`
+  - D: `undefined`
+- **답**: C
+
+p.s - 세미콜론 계속 안붙어 있는거 신경쓰여 죽겠다
+
+
+
+### Q100.
+
+```javascript
+// 🎉✨ 이번이 내 100번째 질문이에요! ✨🎉
+
+const output = `${[] && 'Im'}possible!
+You should${'' && `n't`} see a therapist after so much JavaScript lol`
+```
+
+- **선택지**
+  - A: `possible! You should see a therapist after so much JavaScript lol`
+  - B: `Impossible! You should see a therapist after so much JavaScript lol`
+  - C: `possible! You shouldn't see a therapist after so much JavaScript lol`
+  - D: `Impossible! You shouldn't see a therapist after so much JavaScript lol`
+- **답**: B
+
+
+
+
+
 ---
 
 ```markdown
