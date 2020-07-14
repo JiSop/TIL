@@ -2400,6 +2400,76 @@ You should${'' && `n't`} see a therapist after so much JavaScript lol`
 
 
 
+### Q101.
+
+```javascript
+const one = (false || {} || null)
+const two = (null || false || "")
+const three = ([] || 0 || true)
+
+console.log(one, two, three)
+```
+
+- **선택지**
+  - A: `false` `null` `[]`
+  - B: `null` `""` `true`
+  - C: `{}` `""` `[]`
+  - D: `null` `null` `true`
+- **답**: C
+
+
+
+### Q102.
+
+```javascript
+const myPromise = () => Promise.resolve('I have resolved!')
+
+function firstFunction() {
+  myPromise().then(res => console.log(res))
+  console.log('second')
+}
+
+async function secondFunction() {
+  console.log(await myPromise())
+  console.log('second')
+}
+
+firstFunction()
+secondFunction()
+```
+
+- **선택지**
+  - A: `I have resolved!`, `second` 그리고 `I have resolved!`, `second`
+  - B: `second`, `I have resolved!` 그리고 `second`, `I have resolved!`
+  - C: `I have resolved!`, `second` 그리고 `second`, `I have resolved!`
+  - D: `second`, `I have resolved!` 그리고 `I have resolved!`, `second`
+- **답**: D
+
+`async` `await` 키워드를 사용하면 promise가 resoloved 될때까지 기다리게 할 수 있다.
+
+
+
+### Q103.
+
+```javascript
+const set = new Set()
+
+set.add(1)
+set.add("Lydia")
+set.add({ name: "Lydia" })
+
+for (let item of set) {
+  console.log(item + 2)
+}
+```
+
+- **선택지**
+  - A: `3`, `NaN`, `NaN`
+  - B: `3`, `7`, `NaN`
+  - C: `3`, `Lydia2`, `[object Object]2`
+  - D: `"12"`, `Lydia2`, `[object Object]2`
+- **답**: C
+
 
 
 ---
