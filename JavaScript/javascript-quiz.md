@@ -2472,6 +2472,84 @@ for (let item of set) {
 
 
 
+### Q104.
+
+```javascript
+Promise.resolve(5)
+```
+
+- **선택지**
+  - A: `5`
+  - B: `Promise {: 5}`
+  - C: `Promise {: 5}`
+  - D: `Error`
+- **답**: C
+
+
+
+### Q105.
+
+```javascript
+function compareMembers(person1, person2 = person) {
+  if (person1 !== person2) {
+    console.log("Not the same!")
+  } else {
+    console.log("They are the same!")
+  }
+}
+
+const person = { name: "Lydia" }
+
+compareMembers(person)
+```
+
+- **선택지**
+  - A: `Not the same!`
+  - B: `They are the same!`
+  - C: `ReferenceError`
+  - D: `SyntaxError`
+- **답**: B
+
+
+
+### Q106.
+
+```javascript
+const colorConfig = {
+  red: true,
+  blue: false,
+  green: true,
+  black: true,
+  yellow: false,
+}
+
+const colors = ["pink", "red", "blue"]
+
+console.log(colorConfig.colors[1])
+```
+
+- **선택지**
+  - A: `true`
+  - B: `false`
+  - C: `undefined`
+  - D: `TypeError`
+- **답**: D
+
+
+
+### Q107.
+
+```javascript
+console.log('❤️' === '❤️')
+```
+
+- **선택지**
+  - A: `true`
+  - B: `false`
+- **답**: A
+
+
+
 ---
 
 ```markdown
