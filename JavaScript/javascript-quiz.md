@@ -2550,6 +2550,87 @@ console.log('❤️' === '❤️')
 
 
 
+### Q108. 다음 중 원본 배열을 수정하는 method는 무엇일까요?
+
+```javascript
+const emojis = ['✨', '🥑', '😍']
+
+emojis.map(x => x + '✨')
+emojis.filter(x => x !== '🥑')
+emojis.find(x => x !== '🥑')
+emojis.reduce((acc, cur) => acc + '✨')
+emojis.slice(1, 2, '✨') 
+emojis.splice(1, 2, '✨')
+```
+
+- **선택지**
+  - A: `All of them`
+  - B: `map` `reduce` `slice` `splice`
+  - C: `map` `slice` `splice`
+  - D: `splice`
+- **답**: D
+
+`Array.prototype.map` : 배열의 각 요소에 콜백 함수의 반환값으로 새로운 배열을 생성하여 반환한다.
+
+`Array.prototype.filter` : 콜백 함수의 실행 결과가 `true`인 요소의 값만 추출하여 새로운 배열을 생성하여 반환한다.
+
+`Array.prototype.find` : 콜백 함수를 실행하여 그 결과가 `true`인 첫 번째 요소를 반환한다.
+
+`Array.prototype.reduce` : 각 요소에 리듀서 함수(이전의 콜백 함수 실행 반환값을 전달)를 실행하고 그 결과를 반환한다.
+
+`Array.prototype.slice` : 인자로 주어진 배열의 시작과 끝 인덱스를 기준으로 얕은 복사를 하여 새로운 배열을 반환한다.
+
+`Array.prototype.splice` : 원본 배열의 기존 요소를 삭제, 교체하거나 새로운 요소를 추가한다.
+
+
+
+### Q109.
+
+```javascript
+const food = ['🍕', '🍫', '🥑', '🍔']
+const info = { favoriteFood: food[0] }
+
+info.favoriteFood = '🍝'
+
+console.log(food)
+```
+
+- **선택지**
+  - A: `['🍕', '🍫', '🥑', '🍔']`
+  - B: `['🍝', '🍫', '🥑', '🍔']`
+  - C: `['🍝', '🍕', '🍫', '🥑', '🍔']`
+  - D: `ReferenceError`
+- **답**: A
+
+이모티콘은 문자열이다. 따라서 L2의 `favoriteFood: food[0]` 같이 할당을하면 pass-by-value로 값 자체를 복사하여 전달하고 할당하기 때문에 이 후 L4에서 `info.favoriteFood = '🍝'` 같이 값을 변경하더라도 `food[0]`의 값에 영향을 주지 않는다. 
+
+
+
+### Q110. 이 메소드는 무엇을 할까요?
+
+```javascript
+JSON.parse()
+```
+
+- **선택지**
+  - A: Parses JSON to a JavaScript value
+  - B: Parses a JavaScript object to JSON
+  - C: Parses any JavaScript value to JSON
+  - D: Parses JSON to a JavaScript object only
+- **답**: A
+
+JSON 문자열의 구문으로 JavaScript 값이나 객체를 생성한다.
+
+- p.s - 이 문제의 선택지만 해석이 안되어 있어 추가
+  - A: JSON을 자바스크립트의 값으로 변환한다.
+  - B: 자바스크립트의 객체를 JSON으로 변환한다.
+  - C: 어떤 자바스크립트 값이든 JSON으로 변환한다.
+  - D: JSON을 자바스크립트의 객체로만 변환한다.
+
+> Parse라는 단어의 뜻은 구문 분석, 혹은 구문 분석 과정 그 자체를 의미하는게 맞지만 이해하기 쉽게 '변환'이라는 단어를 사용하였다.
+
+
+
 ---
 
 ```markdown
