@@ -2631,6 +2631,93 @@ JSON 문자열의 구문으로 JavaScript 값이나 객체를 생성한다.
 
 
 
+### Q111.
+
+```javascript
+let name = 'Lydia'
+
+function getName() {
+  console.log(name)
+  let name = 'Sarah'
+}
+
+getName()
+```
+
+- **선택지**
+  - A: Lydia
+  - B: Sarah
+  - C: `undefined`
+  - D: `ReferenceError`
+- **답**: D
+
+L5, 변수 name은 호이스팅 되지만 초기화가 이루어지지 않았기 때문에 ReferenceError가 발생한다.
+
+
+
+### Q112.
+
+```javascript
+function* generatorOne() {
+  yield ['a', 'b', 'c'];
+}
+
+function* generatorTwo() {
+  yield* ['a', 'b', 'c'];
+}
+
+const one = generatorOne()
+const two = generatorTwo()
+
+console.log(one.next().value)
+console.log(two.next().value)
+```
+
+- **선택지**
+  - A: `a` 그리고 `a`
+  - B: `a` 그리고 `undefined`
+  - C: `['a', 'b', 'c']` 그리고 `a`
+  - D: `a` 그리고 `['a', 'b', 'c']`
+- **답**: C
+
+
+
+### Q113.
+
+```javascript
+console.log(`${(x => x)('I love')} to program`)
+```
+
+- **선택지**
+  - A: `I love to program`
+  - B: `undefined to program`
+  - C: `${(x => x)('I love') to program`
+  - D: `TypeError`
+- **답**: A
+
+
+
+### Q114.
+
+```javascript
+let config = {
+  alert: setInterval(() => {
+    console.log('Alert!')
+  }, 1000)
+}
+
+config = null
+```
+
+- **선택지**
+  - A: `setInterval` 콜백은 호출되지 않을거에요
+  - B: `setInterval` 콜백은 한 번만 호출돼요
+  - C: `setInterval` 콜백은 여전히 매 초마다 호출돼요
+  - D: 결코 `config.alert()`를 호출 하지 않고, config 는 `null`이에요
+- **답**: C
+
+
+
 ---
 
 ```markdown
