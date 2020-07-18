@@ -2718,6 +2718,81 @@ config = null
 
 
 
+### Q115. 어느 method가 값 `'Hello world!'`를 리턴 할까요?
+
+```javascript
+const myMap = new Map()
+const myFunc = () => 'greeting'
+
+myMap.set(myFunc, 'Hello world!')
+
+//1
+myMap.get('greeting')
+//2
+myMap.get(myFunc)
+//3
+myMap.get(() => 'greeting')
+```
+
+- **선택지**
+  - A: 1
+  - B: 2
+  - C: 2 그리고 3
+  - D: 모두
+- **답**: B
+
+
+
+### Q116.
+
+```javascript
+const person = {
+  name: "Lydia",
+  age: 21
+}
+
+const changeAge = (x = { ...person }) => x.age += 1
+const changeAgeAndName = (x = { ...person }) => {
+  x.age += 1
+  x.name = "Sarah"
+}
+
+changeAge(person)
+changeAgeAndName()
+
+console.log(person)
+```
+
+- **선택지**
+  - A: `{name: "Sarah", age: 22}`
+  - B: `{name: "Sarah", age: 23}`
+  - C: `{name: "Lydia", age: 22}`
+  - D: `{name: "Lydia", age: 23}`
+- **답**: C
+
+p.s - 어느새 한국어로 번역된 문제는 이제 다 풀었다
+
+
+
+### Q117. Which of the following options will return `6`?
+
+```javascript
+function sumValues(x, y, z) {
+  return x + y + z;
+}
+```
+
+- **선택지**
+  - A: `sumValues([...1, 2, 3])`
+  - B: `sumValues([...[1, 2, 3]])`
+  - C: `sumValues(...[1, 2, 3])`
+  - D: `sumValues([1, 2, 3])`
+- **답**: C
+
+
+
+
+
 ---
 
 ```markdown
