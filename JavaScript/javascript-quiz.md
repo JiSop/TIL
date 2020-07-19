@@ -2,9 +2,9 @@
 
 문제의 이름과 해설은 내 마음대로 작성하였다.
 
-퀴즈 출처: [lydiahallie/javascript-questions](https://github.com/lydiahallie/javascript-questions/blob/master/ko-KR/README-ko_KR.md)
-
-
+- 퀴즈 출처: [lydiahallie/javascript-questions](https://github.com/lydiahallie/javascript-questions)
+  - [한국어](https://github.com/lydiahallie/javascript-questions/blob/master/ko-KR/README-ko_KR.md)
+  - [영어](https://github.com/lydiahallie/javascript-questions/blob/master/en-EN/README.md)
 
 
 
@@ -2789,7 +2789,80 @@ function sumValues(x, y, z) {
   - D: `sumValues([1, 2, 3])`
 - **답**: C
 
+스프레드 연산자를 사용해서 배열(`[1, 2, 3]`)이 전개되어 함수 `sumValues()`의 파라미터 `x, y, z`에 대입된다.
 
+
+
+### Q118.
+
+```javascript
+let num = 1;
+const list = ['🥳', '🤠', '🥰', '🤪'];
+
+console.log(list[(num += 1)]);
+```
+
+- **선택지**
+  - A: `🤠`
+  - B: `🥰`
+  - C: `SyntaxError`
+  - D: `ReferenceError`
+- **답**: B
+
+
+
+### Q119.
+
+```javascript
+const person = {
+  firstName: 'Lydia',
+  lastName: 'Hallie',
+  pet: {
+    name: 'Mara',
+    breed: 'Dutch Tulip Hound',
+  },
+  getFullName() {
+    return `${this.firstName} ${this.lastName}`;
+  },
+};
+
+console.log(person.pet?.name);
+console.log(person.pet?.family?.name);
+console.log(person.getFullName?.());
+console.log(member.getLastName?.());
+```
+
+- **선택지**
+  - A: `undefined` `undefined` `undefined` `undefined`
+  - B: `Mara` `undefined` `Lydia Hallie` `undefined`
+  - C: `Mara` `null` `Lydia Hallie` `null`
+  - D: `null` `ReferenceError` `null` `ReferenceError`
+- **답**: 
+
+정답은 B라고 하는데
+
+`Mara` `undefined` `Lydia Hallie` `ReferenceError` 아닌가..?
+
+
+
+### Q120.
+
+```javascript
+const groceries = ['banana', 'apple', 'peanuts'];
+
+if (groceries.indexOf('banana')) {
+  console.log('We have to buy bananas!');
+} else {
+  console.log(`We don't have to buy bananas!`);
+}
+```
+
+- **선택지**
+  - A: We have to buy bananas!
+  - B: We don't have to buy bananas
+  - C: `undefined`
+  - D: `1`
+- **답**: B
 
 
 
