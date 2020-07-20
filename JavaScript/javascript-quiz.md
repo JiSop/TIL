@@ -2866,6 +2866,56 @@ if (groceries.indexOf('banana')) {
 
 
 
+### Q121.
+
+```javascript
+const config = {
+  languages: [],
+  set language(lang) {
+    return this.languages.push(lang);
+  },
+};
+
+console.log(config.language);
+```
+
+- **선택지**
+  - A: `function language(lang) { this.languages.push(lang }`
+  - B: `0`
+  - C: `[]`
+  - D: `undefined`
+- **답**: D
+
+접근자 프로퍼티 `language`는 getter를 설정하지 않아 읽을 수 없다.
+
+setter는 값을 설정하는 메소드이기 때문에 `language`에 접근하면 `undefined`를 반환한다.
+
+
+
+### Q122.
+
+```javascript
+const name = 'Lydia Hallie';
+
+console.log(!typeof name === 'object');
+console.log(!typeof name === 'string');
+```
+
+- **선택지**
+  - A: `false` `true`
+  - B: `true` `false`
+  - C: `false` `false`
+  - D: `true` `true`
+- **답**: C
+
+`typeof` 연산자를 사용하면 피연산자의 자료형을 문자열로 반환한다.
+
+따라서 ` typeof name`은 `'string'`을 반환 하지만 앞에 논리 NOT 연산자 `!` 사용했기 때문에 `false`로 평가된다.
+
+`false === 'object'`, `false === 'string'`은 `false`
+
+
+
 ---
 
 ```markdown
@@ -2880,4 +2930,3 @@ if (groceries.indexOf('banana')) {
 - **답**:
 
 ```
-
