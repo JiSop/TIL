@@ -5,6 +5,8 @@
 
 
 
+
+
 ## 리터럴과 표현식 그리고 식별자와 변수
 
 > literal, expression, evaluation, operator, value, variable, identifier, declarations, assignment, constant
@@ -35,9 +37,11 @@
 
 
 
+
+
 ## 데이터 타입에는 원시형과 참조형이 있다
 
-> data type, primitive data type, reference type / object type, immutable value, pass-by-value, mutable value, pass-by-reference, type casting, implicit coercion, type coercion
+> data type, primitive data type, reference type, object type, immutable value, pass-by-value, mutable value, pass-by-reference, type casting, implicit coercion, type coercion
 
 자바스크립트의 자료형(data type)에는 크게 원시 데이터 타입(primitive data type)과 참조 타입 / 객체 타입(reference type / object type)으로 분류 된다.
 
@@ -80,6 +84,8 @@
 
 
 
+
+
 ## 객체는 프로퍼티를 싣고
 
 > object, property, method, property key, property value, symbol 
@@ -103,6 +109,10 @@
 프로퍼티 값은 자바스크립트에서 사용할 수 있는 모든 값을 가질 수 있다.
 
 프로퍼티의 값이 함수인 것을 메서드라고 한다. (함수도 값으로 평가 될수 있다)
+
+
+
+
 
 
 

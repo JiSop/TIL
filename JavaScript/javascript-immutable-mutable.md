@@ -155,8 +155,3 @@ Q. deep copy와 pass by value의 연관성
   원시 값은 신뢰성을 보장하기 위해 값을 복사해서 전달한다. 이러한 과정을 pass by value라 하는데 이때 값을 복사하는 것을 deep copy라고 한다.
 
 
-
-
-
-
-

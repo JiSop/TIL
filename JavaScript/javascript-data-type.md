@@ -9,9 +9,11 @@ Data type은 데이터를 메모리에 저장할 때 확보해야 하는 메모�
 
 
 
+
+
 ## 원시 데이터 타입(Primitive data type)
 
-`number` `string`  `boolean` `null` `undefined` `symbol` 
+`number` `string`  `boolean` `null` `undefined` `symbol` `bigint`
 원시 데이터 타입의 값은 Immutable value(변경 불가능한 값)이고 pass-by-value이다.
 
 
@@ -69,6 +71,8 @@ Data type은 데이터를 메모리에 저장할 때 확보해야 하는 메모�
 
 길이에 상관없이 정수를 나타낼 수 있고 정수 리터럴 끝에 n을 붙이면 만들 수 있다.  
 넘버형이 가진 한계보다 더 큰 정수를 표현하기 위해 만들어졌고 가장 최근에 추가된 원시 데이터 타입이다.
+
+
 
 
 
