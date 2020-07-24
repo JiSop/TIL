@@ -2916,6 +2916,30 @@ console.log(!typeof name === 'string');
 
 
 
+### Q123.
+
+```javascript
+const add = x => y => z => {
+  console.log(x, y, z);
+  return x + y + z;
+};
+
+add(4)(5)(6);
+```
+
+- **선택지**
+  - A: `4` `5` `6`
+  - B: `6` `5` `4`
+  - C: `4` `function` `function`
+  - D: `undefined` `undefined` `6`
+- **답**: A
+
+
+
+
+
+
+
 ---
 
 ```markdown
