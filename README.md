@@ -14,6 +14,7 @@
 - [객체(Object)](./JavaScript/javascript-object.md)
 - [배열(Array)](./JavaScript/javascript-array.md)
 - [스코프(Scope)](./JavaScript/javascript-scope.md)
+- [호이스팅(Hoisting)](./JavaScript/javascript-hoisting.md)
 - [실행 콘텍스트(Execution context)](./JavaScript/javascript-execution-context.md)
 - [클로저(Closure)](./JavaScript/javascript-closure.md)
 - [비동기(Asynchoronous)](./JavaScript/javascript-asynchronous.md)
@@ -21,12 +22,6 @@
 - [async / await](./JavaScript/javascript-async-await.md)
 
 ### [단어와 문장으로 정리하는 자바스크립트](./JavaScript/word-javascript.md)
-
-### 자바스크립트와 자료구조
-
-- [스택과 큐(Stack and Queue)](./JavaScript/javascript-stack-and-queue.md)
-- [검색과 정렬(Search and Sort)](./JavaScript/javascript-search-and-sort.md)
-- [해시 테이블(Hash table)](./JavaScript/javascript-hash-table.md)
 
 ### TypeScript
 
