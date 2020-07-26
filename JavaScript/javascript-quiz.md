@@ -2936,7 +2936,48 @@ add(4)(5)(6);
 
 
 
+### Q124.
 
+```javascript
+async function* range(start, end) {
+  for (let i = start; i <= end; i++) {
+    yield Promise.resolve(i);
+  }
+}
+
+(async () => {
+  const gen = range(1, 3);
+  for await (const item of gen) {
+    console.log(item);
+  }
+})();
+```
+
+- **선택지**
+  - A: `Promise {1}` `Promise {2}` `Promise {3}`
+  - B: `Promise {<pending>}` `Promise {<pending>}` `Promise {<pending>}`
+  - C: `1` `2` `3`
+  - D: `undefined` `undefined` `undefined`
+- **답**: C
+
+
+
+### Q125.
+
+```javascript
+const myFunc = ({ x, y, z }) => {
+  console.log(x, y, z);
+};
+
+myFunc(1, 2, 3);
+```
+
+- **선택지**
+  - A: `1` `2` `3`
+  - B: `{1: 1}` `{2: 2}` `{3: 3}`
+  - C: `{ 1: undefined }` `undefined` `undefined`
+  - D: `undefined` `undefined` `undefined`
+- **답**: D
 
 
 
