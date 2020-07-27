@@ -1,9 +1,10 @@
 # 자바스크립트의 데이터 타입
 
-코드에서 사용하는 **모든 데이터는 메모리에 저장하고 참조할 수 있어야 한다.** 
+코드에서 사용하는 모든 데이터는 메모리에 저장하고 참조할 수 있어야 한다. 
+
 Data type은 데이터를 메모리에 저장할 때 확보해야 하는 메모리 공간의 크기와 할당할 수 있는 유요한 값에 대한 정보, 그리고 메모리에 저장되어 있는 2진수 데이터를 어떻게 해석할 지에 대한 정보를 컴퓨터와 개발자에게 제공한다.
 
-**데이터 타입은 한정된 메모리 공간을 효율적으로 사용하기 위해** 서, 그리고 2진수 데이터로 **메모리에 저장된 데이터를 다양한 형태로 사용하기 위해 존재** 한다.
+데이터 타입은 한정된 메모리 공간을 효율적으로 사용하기 위해 서, 그리고 2진수 데이터로 메모리에 저장된 데이터를 다양한 형태로 사용하기 위해 존재 한다.
 
 개발자는 명확한 의도를 가지고 타입을 구별하여 값을 만들고 javascript엔진은 타입을 구별하여 값을 취급해야 한다.
 
@@ -14,6 +15,7 @@ Data type은 데이터를 메모리에 저장할 때 확보해야 하는 메모�
 ## 원시 데이터 타입(Primitive data type)
 
 `number` `string`  `boolean` `null` `undefined` `symbol` `bigint`
+
 원시 데이터 타입의 값은 Immutable value(변경 불가능한 값)이고 pass-by-value이다.
 
 
@@ -78,7 +80,7 @@ Data type은 데이터를 메모리에 저장할 때 확보해야 하는 메모�
 
 ## 객체 타입(Object type / Reference type)
 
-`object`(array, function, regular expression)
+`object` (array, function, regular expression)
 
 ### [object](./javascript-object.md)
 
