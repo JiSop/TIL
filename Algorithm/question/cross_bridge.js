@@ -15,11 +15,11 @@ function solution(bridge_length, weight, truck_weights) {
       bridge.push(0);
     }
     time++;
-    console.log("---");
-    console.log("대기 트럭: ", trucks, trucks.length);
-    console.log("다리: ", bridge, bridge.length);
-    console.log("현재 다리 무게: ", bridge_weight);
-    console.log("경과 시간: ", time);
+    console.log(`
+      대기 트럭: ${trucks}, ${trucks.length}
+      다리: ${bridge}, ${bridge.length}
+      현재 다리 무게: ${bridge_weight}
+      경과 시간: ${time}`);
   }
   return time;
 }
