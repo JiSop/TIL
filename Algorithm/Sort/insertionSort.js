@@ -1,3 +1,12 @@
+/**
+ * **삽입 정렬**  
+ * 
+ * 모든 요소를 하나씩 이동해야 하므로 비용이 많이 든다.
+ * - 시간 복잡도
+ *   - 최상: O(n)
+ *   - 평균: O(n2)
+ *   - 최악: O(n2)
+ */
 function insertionSort(arr) {
   if (arr.length <= 1) return [...arr];
   let sorted_arr = [...arr];
