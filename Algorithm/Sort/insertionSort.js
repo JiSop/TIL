@@ -30,19 +30,3 @@ function insertionSort(arr) {
 const arr = [10, 1, 4, 3, 2, 6, 9, 8, 7];
 console.log(insertionSort(arr));
 console.log(arr);
-
-function insertIndex(sorted_arr, value) {
-  for (let i in sorted_arr) {
-    if (value < sorted_arr[i]) return i;
-  }
-  return sorted_arr.length;
-}
-function insertionSort2(arr) {
-  let sorted_arr = [];
-  while (arr.length != 0) {
-    let value = arr.shift();
-    let index = insertIndex(sorted_arr, value);
-    sorted_arr.splice(index, 0, value);
-  }
-  return sorted_arr;
-}
