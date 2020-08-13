@@ -11,7 +11,7 @@ type ButtonProps = {
   children: React.ReactNode;
   onClick?: (e?: React.MouseEvent<HTMLButtonElement>) => void;
   disabled?: boolean;
-  HEX?: string;
+  hex?: string;
   fullWidth?: boolean;
   roundShape?: boolean;
   outline?: boolean;
@@ -26,7 +26,7 @@ interface ButtonProps = {
   children: React.ReactNode;
   onClick?: (e?: React.MouseEvent<HTMLButtonElement>) => void;
   disabled?: boolean;
-  HEX?: string;
+  hex?: string;
   fullWidth?: boolean;
   roundShape?: boolean;
   outline?: boolean;
@@ -54,7 +54,7 @@ export const Button = (props: ButtonProps) => {
     children,
     onClick,
     disabled,
-    HEX,
+    hex,
     outline,
     fullWidth,
     roundShape
@@ -68,7 +68,7 @@ export const Button = ({
   	children,
     onClick,
     disabled,
-    HEX,
+    hex,
     outline,
     fullWidth,
     roundShape
@@ -89,7 +89,7 @@ export const Button = ({
 
 ```tsx
 const StyledButton = styled.button<ButtonProps>`
-	background-color: ${({ HEX }) => HEX ? HEX : '#37352f'};
+	background-color: ${({ hex }) => hex ? hex : '#37352f'};
 	/* ... */
 `;
 ```
@@ -150,4 +150,3 @@ type, interface도 마찬가지로 한 프로젝트에서는 일관성있게 사
 [TypeScript + React: Why I don't use React.FC](https://fettblog.eu/typescript-react-why-i-dont-use-react-fc/)
 
 [TypeScript + React: Component patterns](https://fettblog.eu/typescript-react-component-patterns/#basic-function-components)
-
