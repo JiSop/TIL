@@ -19,9 +19,8 @@
 - [클로저(Closure)](./JavaScript/javascript-closure.md)
 - [비동기(Asynchoronous)](./JavaScript/javascript-asynchronous.md)
 - [프로미스(Promise)](./JavaScript/javascript-promise.md)
-- [async / await](./JavaScript/javascript-async-await.md)
-
-### [단어와 문장으로 정리하는 자바스크립트](./JavaScript/word-javascript.md)
+- [자바스크립트 다이어그램(statement-value)](./JavaScript/img/js-diagram-statement-value.png)
+- [문장으로 정리하는 자바스크립트](./JavaScript/word-javascript.md)
 
 ### TypeScript
 
@@ -52,4 +51,5 @@
 - [CRA에서 eject 되돌리기](./other/undo-cra-eject.md)
 - [CRA에서 eject 없이 webpack-bundle-analyzer 사용하기](./other/use-webpack-bundle-analyzer-with-cra.md)
 - [코드 마지막에 빈 줄을 삽입하는 이유](./other/why-should-text-files-end-with-a-newline.md)
+- [커밋 컨벤션(bolt-auction)]((./other/commit-convention(bolt-auction).md)
 
