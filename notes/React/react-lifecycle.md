@@ -1,5 +1,5 @@
 ---
-title: React LifeCycle
+title: LifeCycle
 emoji: ⚛︎
 tags:
   - React

@@ -1,6 +1,6 @@
 ---
-title: JavaScript asynchronous
-emoji: ✨
+title: JS asynchronous
+emoji: 📙
 tags:
   - JavaScript
 ---

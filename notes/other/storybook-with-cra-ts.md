@@ -1,6 +1,6 @@
 ---
 title: Storybook with CRA and TS
-emoji: 📔
+emoji: 📚
 tags:
   - Storybook
   - CRA

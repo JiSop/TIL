@@ -1,6 +1,6 @@
 ---
-title: JavaScript Variable
-emoji: ✨
+title: JS Variable
+emoji: 📙
 tags:
   - JavaScript
 ---

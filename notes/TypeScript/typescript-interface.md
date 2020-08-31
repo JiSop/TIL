@@ -1,5 +1,5 @@
 ---
-title: TypeScript Interface
+title: Interface
 emoji: 📘
 tags:
   - TypeScript

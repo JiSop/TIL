@@ -1,6 +1,6 @@
 ---
-title: JavaScript Memory management
-emoji: ✨
+title: JS Memory management
+emoji: 📙
 tags:
   - JavaScript
 ---

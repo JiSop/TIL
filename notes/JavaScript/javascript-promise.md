@@ -1,6 +1,6 @@
 ---
-title: JavaScript Promise
-emoji: ✨
+title: JS Promise
+emoji: 📙
 tags:
   - JavaScript
 ---

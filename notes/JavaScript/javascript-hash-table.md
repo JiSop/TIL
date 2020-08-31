@@ -1,6 +1,6 @@
 ---
-title: JavaScript Hash table
-emoji: ✨
+title: JS Hash table
+emoji: 📙
 tags:
   - JavaScript
 ---

@@ -1,6 +1,6 @@
 ---
 title: JavaScript Quiz
-emoji: ✨
+emoji: 📝
 tags:
   - JavaScript
   - Quiz

@@ -1,6 +1,6 @@
 ---
-title: JavaScript immutable value vs. mutable value
-emoji: ✨
+title: immutable value vs. mutable value
+emoji: 📙
 tags:
   - JavaScript
 ---

@@ -1,6 +1,6 @@
 ---
-title: JavaScript Data type
-emoji: ✨
+title: JS Data type
+emoji: 📙
 tags:
   - JavaScript
 ---

@@ -1,6 +1,6 @@
 ---
-title: JavaScript Search and Sort
-emoji: ✨
+title: JS Search and Sort
+emoji: 📙
 tags:
   - JavaScript
 ---

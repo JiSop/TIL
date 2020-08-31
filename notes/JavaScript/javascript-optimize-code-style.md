@@ -1,6 +1,6 @@
 ---
-title: JavaScript Optimize code style
-emoji: ✨
+title: JS Optimize code style
+emoji: 📙
 tags:
   - JavaScript
 ---

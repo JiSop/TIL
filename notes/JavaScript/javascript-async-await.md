@@ -1,6 +1,6 @@
 ---
-title: JavaScript async/await
-emoji: ✨
+title: JS async/await
+emoji: 📙
 tags:
   - JavaScript
 ---

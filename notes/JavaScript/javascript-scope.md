@@ -1,6 +1,6 @@
 ---
-title: JavaScript Scope
-emoji: ✨
+title: JS Scope
+emoji: 📙
 tags:
   - JavaScript
 ---

@@ -1,6 +1,6 @@
 ---
-title: JavaScript Closure
-emoji: ✨
+title: JS Closure
+emoji: 📙
 tags:
   - JavaScript
 ---

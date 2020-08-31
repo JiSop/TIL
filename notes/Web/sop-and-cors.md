@@ -1,6 +1,6 @@
 ---
 title: SOP and CORS
-emoji: ✨
+emoji: 🌐
 tags:
   - CORS
   - SOP

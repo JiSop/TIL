@@ -1,6 +1,6 @@
 ---
-title: JavaScript Higher Order Function
-emoji: ✨
+title: JS Higher Order Function
+emoji: 📙
 tags:
   - JavaScript
 ---

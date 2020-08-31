@@ -1,7 +1,7 @@
 module.exports = {
   pathPrefix: '/TIL',
   siteMetadata: {
-    title: `청소를 안하면 새로운 우주가 탄생한다`,
+    title: `TIL`,
     description: `Things I've Learned`,
     author: 'JiSop',
   },

@@ -1,6 +1,6 @@
 ---
-title: JavaScript Prototype
-emoji: ✨
+title: JS Prototype
+emoji: 📙
 tags:
   - JavaScript
 ---

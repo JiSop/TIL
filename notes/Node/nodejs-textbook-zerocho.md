@@ -1,6 +1,6 @@
 ---
 title: 제로초 노드 교과서 정리
-emoji: ✨
+emoji: 📗
 tags:
   - Node
   - JavaScript

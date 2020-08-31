@@ -1,5 +1,5 @@
 ---
-title: React Component Typing
+title: Component Typing
 emoji: ⚛︎
 tags:
   - React

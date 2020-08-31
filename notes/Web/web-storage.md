@@ -1,6 +1,6 @@
 ---
 title: Web Storage
-emoji: ✨
+emoji: 🌐
 tags:
   - Web
   - Browser

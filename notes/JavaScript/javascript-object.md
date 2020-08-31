@@ -1,6 +1,6 @@
 ---
-title: JavaScript Object
-emoji: ✨
+title: JS Object
+emoji: 📙
 tags:
   - JavaScript
 ---

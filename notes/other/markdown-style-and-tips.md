@@ -1,6 +1,6 @@
 ---
 title: MarkDown Style and Tips
-emoji: ✍️
+emoji: ⬇️ 
 tags:
   - MarkDown
 ---

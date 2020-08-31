@@ -1,6 +1,6 @@
 ---
-title: JavaScript Literal
-emoji: ✨
+title: JS Literal
+emoji: 📙
 tags:
   - JavaScript
 ---

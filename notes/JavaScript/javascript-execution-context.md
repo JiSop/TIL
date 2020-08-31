@@ -1,6 +1,6 @@
 ---
-title: JavaScript Execution Context
-emoji: ✨
+title: JS Execution Context
+emoji: 📙
 tags:
   - JavaScript
 ---

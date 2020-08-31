@@ -1,5 +1,5 @@
 ---
-title: React Virtual DOM
+title: Virtual DOM
 emoji: ⚛︎
 tags:
   - Virtual DOM

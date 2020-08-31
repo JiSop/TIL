@@ -1,6 +1,6 @@
 ---
 title: JavaScript Word
-emoji: ✨
+emoji: 📙
 tags:
   - JavaScript
 ---

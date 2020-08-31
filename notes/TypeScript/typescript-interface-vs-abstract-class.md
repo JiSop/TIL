@@ -1,5 +1,5 @@
 ---
-title: Typescript, Interface와 Abstract Class 비교
+title: Interface와 Abstract Class 비교
 emoji: 📘
 tags:
   - TypeScript

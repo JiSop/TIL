@@ -1,6 +1,6 @@
 ---
-title: JavaScript Hoisting
-emoji: ✨
+title: JS Hoisting
+emoji: 📙
 tags:
   - JavaScript
 ---

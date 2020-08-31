@@ -1,6 +1,6 @@
 ---
-title: JavaScript Stack and Queue
-emoji: ✨
+title: JS Stack and Queue
+emoji: 📙
 tags:
   - JavaScript
 ---
