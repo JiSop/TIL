@@ -1403,7 +1403,7 @@ console.log(myCounter);
   - D: `NaN`
 - **답**: C
 
-import 된 모듈은 *read-only*
+`import` 된 모듈은 *read-only*
 
 
 
