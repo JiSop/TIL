@@ -149,7 +149,7 @@ export const NotePage: FunctionComponent<NotePageProps> = ({
           }}
         >
           {gitRepoContentPath && (
-            <Link href={`${gitRepoContentPath}${relativePath}`}>
+            <Link href={`${gitRepoContentPath}notes/${relativePath}`}>
               Edit this page
             </Link>
           )}

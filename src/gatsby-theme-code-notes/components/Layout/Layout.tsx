@@ -41,6 +41,7 @@ export const Layout: FunctionComponent<LayoutProps> = ({
   const {
     showDescriptionInSidebar,
     description,
+    gitRepoContentPath,
     logo,
     openSearch,
   } = useSiteMetadata()
@@ -55,7 +56,7 @@ export const Layout: FunctionComponent<LayoutProps> = ({
         titleTemplate={`%s · ${description}`}
         defaultTitle={description}
       >
-        <html lang="en" />
+        <html lang="ko" />
         <meta charSet="utf-8" />
         <title>{title}</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
@@ -167,7 +168,16 @@ export const Layout: FunctionComponent<LayoutProps> = ({
         <Box px={3} mb={3}>
           {!!logo && (
             <Box mb={3}>
-              <Image src={logo} variant="logo" alt="logo" />
+              <Link
+                href={`${gitRepoContentPath}`}
+                alt="github"
+              >
+                <Image 
+                  src={logo} 
+                  variant="logo" 
+                  alt="logo" 
+                  />
+              </Link>
             </Box>
           )}
           {showDescriptionInSidebar && description && (

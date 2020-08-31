@@ -1,7 +1,16 @@
 export const text = {
   noteTitle: {
     fontWeight: 'bold',
-    fontSize: 7,
+    fontSize: 6,
+    mb: 3,
+    lineHeight: 'none',
+    display: 'flex',
+    alignItems: 'center',
+  },
+
+  noteTagTitle: {
+    fontWeight: 'bold',
+    fontSize: 5,
     mb: 3,
     lineHeight: 'none',
     display: 'flex',
@@ -16,5 +25,8 @@ export const text = {
     fontWeight: 'bold',
     color: 'text',
     pl: 5,
+    overflow: 'hidden',
+    whiteSpace: 'nowrap',
+    textOverflow: 'ellipsis',
   },
 }

@@ -20,7 +20,7 @@ export const NotesPage = ({ data, pageContext, location }) => {
       title={pageContext.tag ? `Tag: ${pageContext.tag}` : siteTitle}
     >
       {pageContext.tag && (
-        <Heading as="h1" variant="noteTitle">
+        <Heading as="h1" variant="noteTagTitle">
           {pageContext.tag !== 'untagged' ? (
             <Fragment>
               <TagDot tag={pageContext.tag} size="0.5em" /> {pageContext.tag}

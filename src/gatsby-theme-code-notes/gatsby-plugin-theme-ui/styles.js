@@ -35,23 +35,28 @@ export const styles = {
   },
   h1: {
     ...heading,
-    fontSize: 7,
+    fontSize: 6,
   },
   h2: {
     ...heading,
-    fontSize: 6,
+    fontWeight: '700',
+    fontSize: 5,
+    mt: 7
   },
   h3: {
     ...heading,
-    fontSize: 5,
+    fontWeight: '600',
+    fontSize: 4,
+    mt: 6
   },
   h4: {
     ...heading,
-    fontSize: 4,
+    fontWeight: '500',
+    fontSize: 3,
   },
   h5: {
     ...heading,
-    fontSize: 3,
+    fontSize: 2,
     mb: 2,
   },
   h6: {
