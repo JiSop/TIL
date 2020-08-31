@@ -1,0 +1,23 @@
+{
+  "name": "til-notes",
+  "description": "base on gatsby-starter-code-notes",
+  "private": true,
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": {
+    "name": "JiSop"
+  },
+  "scripts": {
+    "build": "gatsby build",
+    "clean": "gatsby clean",
+    "dev": "gatsby develop",
+    "start": "gatsby serve"
+  },
+  "dependencies": {
+    "gatsby": "^2.23.18",
+    "gatsby-theme-code-notes": "^1.15.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "license": "MIT"
+}

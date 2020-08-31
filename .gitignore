@@ -1,2 +1,5 @@
-/temp
 .vscode
+temp
+.cache
+public
+node_modules
