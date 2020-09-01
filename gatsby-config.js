@@ -17,5 +17,13 @@ module.exports = {
         logo: 'https://avatars0.githubusercontent.com/u/23256989'
       },
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: ``,
+        head: true,
+        anonymize: true,
+      },
+    },
   ],
 }
